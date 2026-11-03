@@ -1,0 +1,9 @@
+@'
+scratch/
+desktop.ini
+Thumbs.db
+node_modules/
+.env
+.env.*
+!.env.example
+'@ | Set-Content -Encoding utf8 -LiteralPath ".gitignore"

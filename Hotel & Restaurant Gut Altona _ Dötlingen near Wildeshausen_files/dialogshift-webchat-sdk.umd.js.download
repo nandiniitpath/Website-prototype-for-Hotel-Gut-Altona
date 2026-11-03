@@ -1,0 +1,4115 @@
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/scripts/config/config.ts"
+/*!**************************************!*\
+  !*** ./src/scripts/config/config.ts ***!
+  \**************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   config: () => (/* binding */ config)
+/* harmony export */ });
+/* harmony import */ var _env__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./env */ "./src/scripts/config/env.ts");
+
+var config = {
+    widgetBase: 'ds-widget',
+    widgetBaseFx: 'ds-widget--fx',
+    widgetBaseVisible: 'ds-widget--visible',
+    wrapperCls: 'ds-wrapper',
+    wrapperNoButtonCls: 'ds-wrapper--no-button',
+    wrapperTeaserIsOpenCls: 'ds-wrapper--teaser-opened',
+    wrapperPositionLeftCls: 'ds-wrapper--pl',
+    wrapperPositionRightCls: 'ds-wrapper--pr',
+    wrapperDirectionRtlCls: 'ds-wrapper--rtl',
+    contentWrapperCls: 'ds-content-wrapper',
+    buttonCls: 'ds-button',
+    buttonLogoCls: 'ds-button--logo',
+    buttonIconContainerCls: 'ds-button--icon-container',
+    buttonWithTextCls: 'ds-button--with-text',
+    buttonActiveCls: 'ds-button--active',
+    buttonHiddenCls: 'ds-button--hidden',
+    chatCls: 'ds-chat',
+    chatLoaderCls: 'ds-chat-loader',
+    chatLoaderImageCls: 'ds-chat-loader-image',
+    chatLoadingCls: 'ds-chat--loading',
+    chatIsOpen: 'ds-chat--opened',
+    chatHasExtendedWidth: 'ds-chat--extended-width',
+    iframeCls: 'ds-iframe',
+    teaserCls: 'ds-teaser',
+    teaserCrossCls: 'ds-teaser__cross',
+    teaserTextCls: 'ds-teaser__text',
+    unreadCls: 'ds-unread',
+    themeRound: 'ds-theme-round',
+    themeTile: 'ds-theme-tile',
+    actionButtonGroupCls: 'ds-action-button-group',
+    actionButtonCls: 'ds-action-button',
+    headerCls: 'ds-header',
+    headerCloseButtonCls: 'ds-header-close-button',
+    headerCloseButtonLeftCls: 'ds-header-close-button--left',
+    env: _env__WEBPACK_IMPORTED_MODULE_0__.environment,
+};
+
+
+/***/ },
+
+/***/ "./src/scripts/config/env.ts"
+/*!***********************************!*\
+  !*** ./src/scripts/config/env.ts ***!
+  \***********************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   environment: () => (/* binding */ environment)
+/* harmony export */ });
+var environment = {
+    coreApiEndpoint: 'https://core.dialogshift.com',
+    ibeApiEndpoint: 'https://helper.dialogshift.com',
+    iframeHost: 'https://webchat.dialogshift.com',
+};
+
+
+/***/ },
+
+/***/ "./src/scripts/consts.ts"
+/*!*******************************!*\
+  !*** ./src/scripts/consts.ts ***!
+  \*******************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   iconSvg: () => (/* binding */ iconSvg)
+/* harmony export */ });
+var iconSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" stroke="currentColor" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.549805 10.8695C0.549805 5.16744 5.84902 0.549988 12.3568 0.549988C18.8646 0.549988 24.1329 5.16744 24.1329 10.9005C24.1329 16.6336 18.8646 21.251 12.3568 21.251C10.0016 21.251 7.80137 20.6312 5.94199 19.5776C4.26855 20.5693 2.47116 20.5383 1.4485 20.3833C1.13861 20.3523 1.07663 19.9495 1.32454 19.7945C2.3472 19.1437 2.87402 18.2141 3.18392 17.3773C1.54147 15.6109 0.549805 13.3487 0.549805 10.8695ZM29.4631 28.5646C29.711 28.5336 29.773 28.2237 29.5561 28.0687C28.6883 27.5109 28.2235 26.7362 27.9756 26.0544C29.3391 24.5669 30.1449 22.7075 30.1449 20.6622C30.1449 17.7182 28.4404 15.0841 25.8373 13.5346C24.5048 19.0818 18.9576 23.2654 12.3568 23.2654C11.892 23.2654 11.4271 23.2344 10.9933 23.2034C12.2329 26.7052 15.9516 29.2773 20.3831 29.2773C22.3355 29.2773 24.1639 28.7815 25.7133 27.8828C27.1079 28.7195 28.5954 28.6885 29.4631 28.5646Z"/><mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="31" height="30"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.549805 10.8695C0.549805 5.16744 5.84902 0.549988 12.3568 0.549988C18.8646 0.549988 24.1329 5.16744 24.1329 10.9005C24.1329 16.6336 18.8646 21.251 12.3568 21.251C10.0016 21.251 7.80137 20.6312 5.94199 19.5776C4.26855 20.5693 2.47116 20.5383 1.4485 20.3833C1.13861 20.3523 1.07663 19.9495 1.32454 19.7945C2.3472 19.1437 2.87402 18.2141 3.18392 17.3773C1.54147 15.6109 0.549805 13.3487 0.549805 10.8695ZM29.4631 28.5646C29.711 28.5336 29.773 28.2237 29.5561 28.0687C28.6883 27.5109 28.2235 26.7362 27.9756 26.0544C29.3391 24.5669 30.1449 22.7075 30.1449 20.6622C30.1449 17.7182 28.4404 15.0841 25.8373 13.5346C24.5048 19.0818 18.9576 23.2654 12.3568 23.2654C11.892 23.2654 11.4271 23.2344 10.9933 23.2034C12.2329 26.7052 15.9516 29.2773 20.3831 29.2773C22.3355 29.2773 24.1639 28.7815 25.7133 27.8828C27.1079 28.7195 28.5954 28.6885 29.4631 28.5646Z"/></mask><g mask="url(#mask0)"/></svg>';
+
+
+/***/ },
+
+/***/ "./src/scripts/core/app.ts"
+/*!*********************************!*\
+  !*** ./src/scripts/core/app.ts ***!
+  \*********************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ActionEventName: () => (/* binding */ ActionEventName),
+/* harmony export */   ActionEventType: () => (/* binding */ ActionEventType),
+/* harmony export */   App: () => (/* binding */ App),
+/* harmony export */   AppTheme: () => (/* binding */ AppTheme),
+/* harmony export */   ChatPosition: () => (/* binding */ ChatPosition)
+/* harmony export */ });
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../config/config */ "./src/scripts/config/config.ts");
+/* harmony import */ var _event_emitter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./event-emitter */ "./src/scripts/core/event-emitter.ts");
+/* harmony import */ var _widget_manager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./widget-manager */ "./src/scripts/core/widget-manager.ts");
+/* harmony import */ var _services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services */ "./src/scripts/services/index.ts");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils */ "./src/scripts/core/utils.ts");
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../enums */ "./src/scripts/enums.ts");
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
+
+
+
+
+
+var ChatPosition;
+(function (ChatPosition) {
+    ChatPosition["left"] = "left";
+    ChatPosition["right"] = "right";
+})(ChatPosition || (ChatPosition = {}));
+var AppTheme;
+(function (AppTheme) {
+    AppTheme["round"] = "round";
+    AppTheme["tile"] = "tile";
+})(AppTheme || (AppTheme = {}));
+var appOptionsDefault = {
+    locale: 'en',
+    theme: AppTheme.round,
+    position: ChatPosition.right,
+    isChatboxVisible: false,
+    isButtonVisible: true,
+    renderWaButton: false,
+    showTeaserOnce: false,
+    renderButton: true,
+    showFooter: true,
+    initialElement: {
+        successor: null,
+        suppress: false,
+    },
+    unreadCounter: 0,
+    context: {},
+    direction: 'ltr',
+    showInIframe: false,
+    custidStoreMode: _enums__WEBPACK_IMPORTED_MODULE_5__.CustidStoreMode.cookie,
+    loadGaContext: false,
+    leftCloseButton: false,
+};
+var ActionEventType;
+(function (ActionEventType) {
+    ActionEventType["action"] = "action";
+    ActionEventType["message"] = "message";
+    ActionEventType["command"] = "command";
+})(ActionEventType || (ActionEventType = {}));
+var ActionEventName;
+(function (ActionEventName) {
+    ActionEventName["userReady"] = "user.ready";
+    ActionEventName["tabOpen"] = "tab.open";
+    ActionEventName["setTeaserText"] = "set.teaser.text";
+    ActionEventName["showChatbox"] = "show.chatbox";
+    ActionEventName["hideChatbox"] = "hide.chatbox";
+    ActionEventName["showWhatsApp"] = "show.whatsApp";
+})(ActionEventName || (ActionEventName = {}));
+var App = /** @class */ (function () {
+    function App(options) {
+        this.destroyed = false;
+        this.ready = false;
+        this.isTeaserVisible = false;
+        if (!options) {
+            throw Error('Please provide Dialogshift chat configuration');
+        }
+        if (!options.id) {
+            throw Error('Dialogshift app id is undefined.');
+        }
+        this.options = (0,_utils__WEBPACK_IMPORTED_MODULE_4__.mergeDeep)(appOptionsDefault, options);
+        this.broadcast = new _event_emitter__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
+        this.widgetManager = new _widget_manager__WEBPACK_IMPORTED_MODULE_2__.WidgetManager(this);
+        this.init();
+    }
+    App.prototype.init = function () {
+        var _this = this;
+        if (this.options.context !== undefined) {
+            this.options.context['hostUrl'] = encodeURI(window.location.href);
+        }
+        if ((0,_utils__WEBPACK_IMPORTED_MODULE_4__.parseUrlParam)(window.location.href, 'ctrl') === 'forcenew') {
+            _services__WEBPACK_IMPORTED_MODULE_3__.UserService.deleteUser();
+            _services__WEBPACK_IMPORTED_MODULE_3__.TokenService.deleteToken();
+            // CookieService.delete('ds-keep-chat-open')
+            (0,_utils__WEBPACK_IMPORTED_MODULE_4__.removeURLParameters)(['ctrl']);
+        }
+        var openUrlParam = (0,_utils__WEBPACK_IMPORTED_MODULE_4__.parseUrlParam)(window.location.href, 'dschat');
+        if (openUrlParam === 'open' && window.innerWidth > 576) {
+            this.options.isChatboxVisible = true;
+        }
+        this.loadConfig().then(function () {
+            if (_this.chatConfig.showWebsiteChat === false) {
+                return;
+            }
+            if (_this.chatConfig.enableCSRFProtection) {
+                var csrfAfter = 0;
+                if (_this.chatConfig.csrfAfter) {
+                    csrfAfter = _this.chatConfig.csrfAfter;
+                }
+                _services__WEBPACK_IMPORTED_MODULE_3__.TokenService.touchToken(_this.options.id, csrfAfter).then(function (token) {
+                    _this.csrfToken = token;
+                });
+                _this.afterInit();
+            }
+            else {
+                _this.afterInit();
+            }
+        });
+    };
+    App.prototype.afterInit = function () {
+        var _this = this;
+        this.render();
+        this.afterRender();
+        this.bindEvents();
+        setTimeout(function () {
+            _this.broadcast.fire('init');
+        }, 20);
+    };
+    App.prototype.initWebchatService = function () {
+        this.webchatService = new _services__WEBPACK_IMPORTED_MODULE_3__.WebchatService({
+            targetWindow: this.widgetManager.getIframeWidget().getBoxElem(),
+        });
+    };
+    App.prototype.render = function () {
+        var _this = this;
+        var isWidgetManagerVisible = this.options.showInIframe
+            ? true
+            : (0,_utils__WEBPACK_IMPORTED_MODULE_4__.inIframe)()
+                ? false
+                : true;
+        this.widgetManager.renderWrapper(Object.assign({}, this.options, {
+            visible: isWidgetManagerVisible,
+        }));
+        this.widgetManager.renderContentWrapper();
+        this.widgetManager.renderFooter();
+        if (this.options.renderButton) {
+            this.widgetManager.renderChatButton(this.options, this.chatConfig);
+        }
+        this.widgetManager.renderTeaserWidget(this.options, this.chatConfig, this.isTeaserVisible);
+        this.widgetManager.renderActionButtonGroupWidget(this, this.options, this.chatConfig);
+        this.widgetManager.renderChatboxWidget(this.options, function () {
+            _this.loadChat();
+        });
+        this.widgetManager.renderHeader(this.options);
+        this.widgetManager.renderUnreadWidget(this.options, this.chatConfig);
+        if (this.options.renderWaButton) {
+            this.widgetManager.renderWhatsappButtonWidget(this.chatConfig);
+        }
+        // Always render the window widget because it is possible to configure only the button in the chat window
+        this.widgetManager.renderWhatsappWindowWidget(this.options);
+        this.widgetManager.renderIframeBox();
+        this.broadcast.on('ready', function () {
+            _this.ready = true;
+        });
+    };
+    App.prototype.afterRender = function () {
+        var _this = this;
+        var _a = this.chatConfig, showTeaserAfter = _a.showTeaserAfter, hideTeaserAfter = _a.hideTeaserAfter;
+        if (showTeaserAfter) {
+            setTimeout(function () {
+                if (!_this.widgetManager.getTeaserWidget().isVisible() &&
+                    !_this.widgetManager.getChatboxWidget().isVisible()) {
+                    _this.widgetManager.getTeaserWidget().show();
+                }
+            }, showTeaserAfter * 1000);
+        }
+        if (hideTeaserAfter) {
+            setTimeout(function () {
+                _this.widgetManager.getTeaserWidget().hide();
+            }, hideTeaserAfter * 1000);
+        }
+        /* if (CookieService.get('keep-chat-open') === 'true') {
+          this.setInitialElement({
+            suppress: true,
+          })
+          this.loadChat()
+    
+          this.getBroadcast().once('ready', () => {
+            setTimeout(() => {
+              this.webchatService.setMinimized(true)
+            }, 250)
+          })
+        } */
+    };
+    App.prototype.bindEvents = function () {
+        var _this = this;
+        window.addEventListener('message', function (event) {
+            if (event.origin === _config_config__WEBPACK_IMPORTED_MODULE_0__.config.env.iframeHost) {
+                var message_1 = event.data;
+                if (message_1.type === ActionEventType.message) {
+                    _this.broadcast.fire(message_1.name, message_1.payload);
+                }
+                if (message_1.type === ActionEventType.command) {
+                    _this.broadcast.fire(message_1.name, message_1.payload);
+                }
+                if (message_1.type === ActionEventType.action) {
+                    _this.proceedActionEvent(message_1);
+                }
+                if (message_1.payload && message_1.payload.openInBox === true) {
+                    _this.widgetManager.getIframeBoxWidget().load(message_1.payload.url);
+                    setTimeout(function () {
+                        if (message_1.payload.boxWidth) {
+                            _this.widgetManager
+                                .getIframeBoxWidget()
+                                .setWidth(message_1.payload.boxWidth);
+                        }
+                        else {
+                            _this.widgetManager.getIframeBoxWidget().setWidth('376');
+                        }
+                        _this.widgetManager.getIframeBoxWidget().show();
+                    }, 300);
+                }
+            }
+        });
+        this.broadcast.on('message.receive', function (event) {
+            if (!_this.widgetManager.getChatboxWidget().isVisible() &&
+                !event.data.fromHistory) {
+                _this.widgetManager.getUnreadWidget().increase(1);
+            }
+        });
+        this.broadcast.on('command.receive', function (event) {
+            var commandModel = event.data;
+            if (commandModel.commandType === 'receivedCookieConsent') {
+                _services__WEBPACK_IMPORTED_MODULE_3__.UserService.switchToCookieModeAfterConsent();
+            }
+            else if (commandModel.commandType === 'dismissCookieConsent') {
+                _services__WEBPACK_IMPORTED_MODULE_3__.UserService.switchToSessionModeAfterConsentDismiss();
+            } /* else if (commandModel.commandType === 'livechat') {
+              if (
+                commandModel.action === 'start' &&
+                this.chatConfig.keepChatOpenDuringLivechat
+              ) {
+                CookieService.set('keep-chat-open', 'true')
+              }
+      
+              if (commandModel.action === 'end') {
+                CookieService.set('keep-chat-open', 'false')
+              }
+            } */
+        });
+    };
+    App.prototype.proceedActionEvent = function (message) {
+        if (message.name === ActionEventName.tabOpen) {
+            var url = message.payload.targetUrl;
+            if (message.payload.urlType === 'openSameTab') {
+                if (!(0,_utils__WEBPACK_IMPORTED_MODULE_4__.isExternalUrl)(url)) {
+                    url += "".concat(url.split('?')[1] ? '&' : '?', "dschat=open");
+                }
+                window.open(url, '_self');
+            }
+            if (message.payload.urlType === 'openNewTab') {
+                window.open(url, '_blank');
+            }
+        }
+        if (message.name === ActionEventName.setTeaserText) {
+            this.widgetManager.getTeaserWidget().setContent(message.payload.text);
+            this.widgetManager.getTeaserWidget().show({
+                force: true,
+            });
+        }
+        if (message.name === ActionEventName.showChatbox) {
+            this.widgetManager.getChatboxWidget().show();
+        }
+        if (message.name === ActionEventName.hideChatbox) {
+            this.widgetManager.getChatboxWidget().hide();
+        }
+        if (message.name === ActionEventName.showWhatsApp) {
+            this.widgetManager.getWhatsappWindowWidget().show();
+        }
+    };
+    App.prototype.loadConfig = function () {
+        var _this = this;
+        var _a;
+        var channel = ((_a = this.options.context) === null || _a === void 0 ? void 0 : _a.channel)
+            ? this.options.context.channel
+            : 'pwa-embed';
+        return _services__WEBPACK_IMPORTED_MODULE_3__.ApiService.getConfig(this.options.id, _services__WEBPACK_IMPORTED_MODULE_3__.UserService.getCustomerId(), window.location.host, window.location.pathname, channel).then(function (data) {
+            _this.chatConfig = data;
+            if (data.websiteElementCss) {
+                (0,_utils__WEBPACK_IMPORTED_MODULE_4__.injectCss)(data.websiteElementCss);
+            }
+            if (_this.chatConfig.defaultLg) {
+                _this.chatConfig.defaultLocale = _this.chatConfig.defaultLg;
+                delete _this.chatConfig.defaultLg;
+            }
+            if (_this.chatConfig.channelOverride && _this.options.context !== undefined) {
+                _this.options.context.channel = _this.chatConfig.channelOverride;
+            }
+            _this.applyConfig();
+            return _this.chatConfig;
+        });
+    };
+    App.prototype.applyConfig = function () {
+        var _a = this.chatConfig, setUnreadCounter = _a.setUnreadCounter, showTeaserAfter = _a.showTeaserAfter, hideTeaserAfter = _a.hideTeaserAfter, theme = _a.theme, noCookieModeSdk = _a.noCookieModeSdk, forgetCustomerAfterHours = _a.forgetCustomerAfterHours, isChatboxVisible = _a.isChatboxVisible, renderWaButton = _a.renderWaButton, extendedWidth = _a.extendedWidth, bwWaButton = _a.bwWaButton, custidStoreMode = _a.custidStoreMode, loadGaContext = _a.loadGaContext, leftCloseButton = _a.leftCloseButton, iconUrl = _a.iconUrl;
+        if (setUnreadCounter) {
+            this.options.unreadCounter = setUnreadCounter;
+        }
+        if (isChatboxVisible !== undefined) {
+            this.options.isChatboxVisible = isChatboxVisible;
+        }
+        if (showTeaserAfter === 0) {
+            this.isTeaserVisible = true;
+        }
+        if (hideTeaserAfter === 0) {
+            this.isTeaserVisible = false;
+        }
+        if (theme && theme in AppTheme) {
+            this.options.theme = theme;
+        }
+        if (noCookieModeSdk === true) {
+            _services__WEBPACK_IMPORTED_MODULE_3__.CookieService.noCookieMode = true;
+        }
+        if (forgetCustomerAfterHours) {
+            _services__WEBPACK_IMPORTED_MODULE_3__.UserService.cookieLifetime = forgetCustomerAfterHours;
+            _services__WEBPACK_IMPORTED_MODULE_3__.UserService.updateCookieLifetime(forgetCustomerAfterHours);
+        }
+        if (renderWaButton) {
+            this.options.renderWaButton = renderWaButton;
+        }
+        if (extendedWidth) {
+            this.options.extendedWidth = extendedWidth;
+        }
+        if (bwWaButton) {
+            this.options.bwWaButton = bwWaButton;
+        }
+        if (custidStoreMode) {
+            this.options.custidStoreMode = custidStoreMode;
+            _services__WEBPACK_IMPORTED_MODULE_3__.UserService.custidStoreMode = custidStoreMode;
+        }
+        if (loadGaContext) {
+            this.options.loadGaContext = loadGaContext;
+            _services__WEBPACK_IMPORTED_MODULE_3__.UserService.loadGaContext = loadGaContext;
+        }
+        if (leftCloseButton) {
+            this.options.leftCloseButton = leftCloseButton;
+        }
+        if (iconUrl) {
+            this.options.iconUrl = iconUrl;
+        }
+    };
+    App.prototype.getWebchatService = function () {
+        return this.webchatService;
+    };
+    App.prototype.getBroadcast = function () {
+        return this.broadcast;
+    };
+    App.prototype.getWidgetManager = function () {
+        return this.widgetManager;
+    };
+    App.prototype.getContext = function (key) {
+        return new Promise(function (resolve, reject) {
+            if (_services__WEBPACK_IMPORTED_MODULE_3__.UserService.getCustomerId()) {
+                _services__WEBPACK_IMPORTED_MODULE_3__.ApiService.getContext(_services__WEBPACK_IMPORTED_MODULE_3__.UserService.getCustomerId(), key).then(resolve, reject);
+            }
+            else {
+                reject('Can not load context. Customer is not created.');
+            }
+        });
+    };
+    App.prototype.setContext = function (key, value) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            if (_services__WEBPACK_IMPORTED_MODULE_3__.UserService.getCustomerId()) {
+                _services__WEBPACK_IMPORTED_MODULE_3__.ApiService.setContext(_services__WEBPACK_IMPORTED_MODULE_3__.UserService.getCustomerId(), key, value).then(resolve, reject);
+            }
+            else if (_this.options.context !== undefined) {
+                _this.options.context[key] = value;
+            }
+        });
+    };
+    App.prototype.getConfig = function () {
+        return this.chatConfig;
+    };
+    App.prototype.getClientConfig = function () {
+        var _a;
+        return {
+            clientid: this.options.id,
+            channel: ((_a = this.options.context) === null || _a === void 0 ? void 0 : _a.channel) ? this.options.context.channel : 'pwa-embed',
+        };
+    };
+    App.prototype.setInitialElement = function (initialElement) {
+        var mergedInitialElement = (0,_utils__WEBPACK_IMPORTED_MODULE_4__.mergeDeep)(this.options.initialElement, initialElement);
+        this.options.initialElement = mergedInitialElement;
+        if (this.widgetManager.getIframeWidget()) {
+            this.widgetManager
+                .getIframeWidget()
+                .setInitialElement(mergedInitialElement);
+        }
+    };
+    App.prototype.getInitialElement = function () {
+        return this.options.initialElement;
+    };
+    App.prototype.triggerElement = function (options) {
+        var _this = this;
+        var config = __assign({ showChatbox: true, suppressInitialElement: true }, options);
+        if (!this.isReady()) {
+            this.getBroadcast().once('ready', function () {
+                setTimeout(function () {
+                    _this.webchatService.triggerElement({
+                        teaserButton: options.teaserButton,
+                        successor: options.successor,
+                    });
+                }, 250);
+            });
+            if (config.suppressInitialElement) {
+                this.setInitialElement({
+                    suppress: true,
+                });
+            }
+            if (config.showChatbox) {
+                this.widgetManager.getChatboxWidget().show();
+            }
+            else {
+                this.loadChat();
+            }
+        }
+        if (this.isReady()) {
+            if (!this.widgetManager.getChatboxWidget().isVisible() &&
+                config.showChatbox) {
+                this.widgetManager.getChatboxWidget().show();
+            }
+            this.webchatService.triggerElement({
+                teaserButton: options.teaserButton,
+                successor: options.successor,
+            });
+        }
+    };
+    App.prototype.destroy = function () {
+        if (this.destroyed) {
+            return;
+        }
+        this.destroyed = true;
+        this.widgetManager.destroy();
+        this.broadcast.fire('destroy');
+        this.broadcast.offAll();
+    };
+    App.prototype.isDestroyed = function () {
+        return this.destroyed;
+    };
+    App.prototype.isReady = function () {
+        return !this.destroyed && this.ready;
+    };
+    App.prototype.loadChat = function () {
+        var _this = this;
+        var _a;
+        var load = function () {
+            var iframeWidget = _this.widgetManager.getIframeWidget();
+            if (!iframeWidget.isLoaded()) {
+                iframeWidget.setLoaded(true);
+                _services__WEBPACK_IMPORTED_MODULE_3__.UserService.touchUser(_this.options.id, _this.options.locale, _this.csrfToken, _this.options.context).then(function (customerId) {
+                    // Debug interval
+                    setTimeout(function () {
+                        iframeWidget.load(customerId);
+                    }, 20);
+                });
+            }
+        };
+        var iframeWidget = this.widgetManager.getIframeWidget();
+        if (!iframeWidget || !iframeWidget.isRendered()) {
+            var channel = ((_a = this.options.context) === null || _a === void 0 ? void 0 : _a.channel)
+                ? this.options.context.channel
+                : 'pwa-embed';
+            var _b = this.options, id = _b.id, initialElement = _b.initialElement, locale = _b.locale;
+            this.widgetManager.renderIframeWidget({
+                id: id,
+                initialElement: initialElement,
+                locale: locale,
+                channel: channel,
+                host: _config_config__WEBPACK_IMPORTED_MODULE_0__.config.env.iframeHost,
+            }, function () {
+                // For a separate thread. @todo refactor render flow.
+                setTimeout(function () {
+                    _this.initWebchatService();
+                    load();
+                }, 20);
+            });
+        }
+    };
+    App.prototype.setActionButtons = function (buttons) {
+        var _this = this;
+        this.widgetManager.getActionButtonGroupWidget().clearButtons();
+        buttons.forEach(function (item) {
+            _this.widgetManager.getActionButtonGroupWidget().addButton(__assign(__assign({}, item), { locale: _this.options.locale, app: _this }));
+        });
+    };
+    App.prototype.setLocale = function (locale) {
+        this.options.locale = locale;
+        this.widgetManager.setLocale(locale, this.chatConfig);
+    };
+    return App;
+}());
+
+
+
+/***/ },
+
+/***/ "./src/scripts/core/base-widget.ts"
+/*!*****************************************!*\
+  !*** ./src/scripts/core/base-widget.ts ***!
+  \*****************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   BaseWidget: () => (/* binding */ BaseWidget),
+/* harmony export */   config: () => (/* binding */ config)
+/* harmony export */ });
+/* harmony import */ var _observable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./observable */ "./src/scripts/core/observable.ts");
+/* harmony import */ var _services_audio_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/audio.service */ "./src/scripts/services/audio.service.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __spreadArray = (undefined && undefined.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
+
+
+var config = {
+    rootCls: 'ds-widget',
+    visibleCls: 'ds-widget--visible',
+    fxCls: {
+        fade: 'ds-widget-fx--fade',
+        zoom: 'ds-widget-fx--zoom',
+        fadeBottom: 'ds-widget-fx--fade-bottom',
+        bounceInRight: 'ds-widget-fx--bounce-in-right',
+        pulse: 'ds-widget-fx--pulse',
+        bounce: 'ds-widget-fx--bounce',
+    },
+};
+var BaseWidget = /** @class */ (function (_super) {
+    __extends(BaseWidget, _super);
+    function BaseWidget(options) {
+        var _this = _super.call(this, { events: options.events }) || this;
+        _this.baseCls = '';
+        _this.destroyed = false;
+        _this.displayMode = 'block';
+        _this.effects = {
+            appear: null,
+            delay: 0,
+            attention: null,
+            attentionInterval: 0,
+        };
+        _this.attentionInterval = null;
+        _this.visible = true;
+        _this.animationDelay = 250;
+        if (!options.effects) {
+            delete options.effects;
+        }
+        Object.assign(_this, options);
+        if (_this.renderTo) {
+            _this.render();
+        }
+        return _this;
+    }
+    BaseWidget.prototype.showNode = function () {
+        var _this = this;
+        var boxElem = this.getBoxElem();
+        boxElem.style.display = this.getDisplayMode();
+        if (this.effects.appear) {
+            this.showAnimateNode(boxElem);
+        }
+        else {
+            setTimeout(function () {
+                boxElem.classList.add(config.visibleCls);
+                if (_this.effects.sound) {
+                    _services_audio_service__WEBPACK_IMPORTED_MODULE_1__.AudioService.playSound(_this.effects.sound);
+                }
+            }, 10);
+        }
+        if (this.effects.attention && this.effects.attentionInterval) {
+            setTimeout(function () {
+                _this.startAttention();
+            }, this.effects.delay);
+        }
+    };
+    BaseWidget.prototype.hideNode = function () {
+        var boxElem = this.getBoxElem();
+        if (this.effects.attention && this.effects.attentionInterval) {
+            this.stopAttention();
+        }
+        boxElem.classList.remove(config.visibleCls);
+        if (this.effects.appear) {
+            this.hideAnimateNode(boxElem);
+        }
+        setTimeout(function () {
+            boxElem.style.display = 'none';
+        }, this.animationDelay);
+    };
+    BaseWidget.prototype.showAnimateNode = function (boxElem) {
+        var _this = this;
+        setTimeout(function () {
+            var handler = function () {
+                boxElem.removeEventListener('animationend', handler);
+                boxElem.classList.add(config.visibleCls);
+                if (_this.effects.appear) {
+                    boxElem.classList.remove(config.fxCls[_this.effects.appear]);
+                }
+            };
+            boxElem.addEventListener('animationend', handler);
+            if (_this.effects.appear) {
+                boxElem.classList.add(config.fxCls[_this.effects.appear]);
+            }
+            if (_this.effects.sound) {
+                _services_audio_service__WEBPACK_IMPORTED_MODULE_1__.AudioService.playSound(_this.effects.sound);
+            }
+        }, this.effects.delay);
+    };
+    BaseWidget.prototype.hideAnimateNode = function (boxElem) {
+        boxElem.style.removeProperty('animationDelay');
+        if (this.effects.appear) {
+            boxElem.classList.remove(config.fxCls[this.effects.appear]);
+        }
+    };
+    BaseWidget.prototype.startAttention = function () {
+        var _this = this;
+        this.attentionInterval = setInterval(function () {
+            var boxElem = _this.getBoxElem();
+            var handler = function () {
+                boxElem.removeEventListener('animationend', handler);
+                if (_this.effects.attention) {
+                    boxElem.classList.remove(config.fxCls[_this.effects.attention]);
+                }
+            };
+            boxElem.addEventListener('animationend', handler);
+            if (_this.effects.attention) {
+                boxElem.classList.add(config.fxCls[_this.effects.attention]);
+            }
+        }, this.effects.attentionInterval);
+    };
+    BaseWidget.prototype.stopAttention = function () {
+        this.attentionInterval && clearInterval(this.attentionInterval);
+        var boxElem = this.getBoxElem();
+        if (this.effects.attention) {
+            boxElem.classList.remove(config.fxCls[this.effects.attention]);
+        }
+    };
+    BaseWidget.prototype.isDestroyed = function () {
+        return this.destroyed;
+    };
+    BaseWidget.prototype.isVisible = function () {
+        return this.visible;
+    };
+    BaseWidget.prototype.getDisplayMode = function () {
+        return this.displayMode;
+    };
+    BaseWidget.prototype.getBaseCls = function () {
+        return this.baseCls;
+    };
+    BaseWidget.prototype.createNode = function () {
+        return document.createElement('div');
+    };
+    BaseWidget.prototype.getBoxElem = function () {
+        var _this = this;
+        if (!this.boxElem) {
+            this.boxElem = this.createNode();
+            var baseCls = this.getBaseCls();
+            var classes = [config.rootCls];
+            if (typeof baseCls === 'string') {
+                classes = __spreadArray(__spreadArray([], classes, true), (baseCls.indexOf(' ') < 0
+                    ? [baseCls]
+                    : baseCls.replace(/^\s+|\s+$/g, '').split(/\s+/)), true);
+            }
+            else {
+                classes = __spreadArray(__spreadArray([], classes, true), baseCls, true);
+            }
+            classes.forEach(function (item) { var _a; return (_a = _this.boxElem) === null || _a === void 0 ? void 0 : _a.classList.add(item); });
+        }
+        return this.boxElem;
+    };
+    BaseWidget.prototype.getContentElem = function () {
+        if (!this.contentElem) {
+            this.contentElem = this.createNode();
+            if (this.getBaseCls()) {
+                this.contentElem.classList.add("".concat(this.getBaseCls(), "__content"));
+            }
+            this.getBoxElem().appendChild(this.contentElem);
+        }
+        return this.contentElem;
+    };
+    BaseWidget.prototype.render = function (renderTo) {
+        if (!renderTo && !this.renderTo) {
+            throw Error('Please provide parent node to render widget');
+        }
+        if (this.isRendered()) {
+            return;
+        }
+        var renderToNode = this.renderTo;
+        if (renderTo) {
+            renderToNode = renderTo;
+        }
+        this.fire('before:render');
+        var boxElem = this.getBoxElem();
+        if (!this.visible) {
+            this.hideNode();
+        }
+        if (this.content) {
+            this.setContent(this.content);
+        }
+        renderToNode.appendChild(boxElem);
+        this.fire('render');
+        if (this.visible) {
+            this.visible = false;
+            this.show();
+        }
+    };
+    BaseWidget.prototype.isRendered = function () {
+        return this.boxElem !== undefined && document.body.contains(this.boxElem);
+    };
+    BaseWidget.prototype.show = function () {
+        var _this = this;
+        if (this.isVisible()) {
+            return;
+        }
+        this.fire('before:show');
+        this.visible = true;
+        this.showNode();
+        setTimeout(function () { return _this.fire('show'); }, this.animationDelay);
+    };
+    BaseWidget.prototype.hide = function () {
+        var _this = this;
+        if (!this.isVisible()) {
+            return;
+        }
+        this.fire('before:hide');
+        this.visible = false;
+        this.hideNode();
+        setTimeout(function () { return _this.fire('hide'); }, this.animationDelay);
+    };
+    BaseWidget.prototype.addCls = function (cls) {
+        this.getBoxElem().classList.add(cls);
+    };
+    BaseWidget.prototype.removeCls = function (cls) {
+        this.getBoxElem().classList.remove(cls);
+    };
+    BaseWidget.prototype.setContent = function (content, safe) {
+        if (safe === void 0) { safe = false; }
+        this.content = content;
+        if (safe) {
+            this.getContentElem().innerText = content.toString();
+        }
+        else {
+            this.getContentElem().innerHTML = content.toString();
+        }
+    };
+    BaseWidget.prototype.destroy = function () {
+        _super.prototype.destroy.call(this);
+        var contentElem = this.getContentElem();
+        if (contentElem && contentElem.parentNode) {
+            contentElem.parentNode.removeChild(contentElem);
+        }
+        this.contentElem = undefined;
+        var boxElem = this.getBoxElem();
+        if (boxElem && boxElem.parentNode) {
+            boxElem.parentNode.removeChild(boxElem);
+        }
+        this.boxElem = undefined;
+        this.destroyed = true;
+        this.fire('destroy');
+    };
+    return BaseWidget;
+}(_observable__WEBPACK_IMPORTED_MODULE_0__.Observable));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/core/event-emitter.ts"
+/*!*******************************************!*\
+  !*** ./src/scripts/core/event-emitter.ts ***!
+  \*******************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   EventEmitter: () => (/* binding */ EventEmitter)
+/* harmony export */ });
+/**
+ * A simple and lightweight EventEmitter by TypeScript for Node.js or Browsers.
+ *
+ * @author billjs
+ * @see https://github.com/billjs/event-emitter
+ * @license MIT(https://opensource.org/licenses/MIT)
+ */
+/**
+ * It's a class for managing events.
+ * It can be extended to provide event functionality for other classes or object.
+ *
+ * @export
+ * @class EventEmitter
+ */
+var EventEmitter = /** @class */ (function () {
+    function EventEmitter() {
+        /**
+         * the all event handlers are added.
+         * it's a Map data structure(key-value), the key is event type, and the value is event handler.
+         *
+         * @memberof EventEmitter
+         */
+        this.eventHandlers = {};
+    }
+    /**
+     * event type validator.
+     *
+     * @param {string} type event type
+     * @returns {boolean}
+     * @memberof EventEmitter
+     */
+    EventEmitter.prototype.isValidType = function (type) {
+        return typeof type === 'string';
+    };
+    /**
+     * event handler validator.
+     *
+     * @param {EventHandler} handler event handler
+     * @returns {boolean}
+     * @memberof EventEmitter
+     */
+    EventEmitter.prototype.isValidHandler = function (handler) {
+        return typeof handler === 'function';
+    };
+    /**
+     * listen on a new event by type and handler.
+     * if listen on, the true is returned, otherwise the false.
+     * The handler will not be listen if it is a duplicate.
+     *
+     * @param {string} type event type, it must be a unique string.
+     * @param {EventHandler} handler event handler, when if the same handler is passed,
+     * listen it by only once.
+     * @returns {boolean}
+     * @memberof EventEmitter
+     * @example
+     *  const emitter = new EventEmitter();
+     *  emitter.on('change:name', evt => {
+     *    console.log(evt);
+     *  });
+     */
+    EventEmitter.prototype.on = function (type, handler) {
+        if (!type || !handler)
+            return false;
+        if (!this.isValidType(type))
+            return false;
+        if (!this.isValidHandler(handler))
+            return false;
+        var handlers = this.eventHandlers[type];
+        if (!handlers)
+            handlers = this.eventHandlers[type] = [];
+        // when the same handler is passed, listen it by only once.
+        if (handlers.indexOf(handler) >= 0)
+            return false;
+        handler._once = false;
+        handlers.push(handler);
+        return true;
+    };
+    /**
+     * listen on an once event by type and handler.
+     * when the event is fired, that will be listen off immediately and automatically.
+     * The handler will not be listen if it is a duplicate.
+     *
+     * @param {string} type event type, it must be a unique string.
+     * @param {EventHandler} handler event handler,
+     * when if the same handler is passed, listen it by only once.
+     * @returns {boolean}
+     * @memberof EventEmitter
+     * @example
+     *  const emitter = new EventEmitter();
+     *  emitter.once('change:name', evt => {
+     *    console.log(evt);
+     *  });
+     */
+    EventEmitter.prototype.once = function (type, handler) {
+        if (!type || !handler)
+            return false;
+        if (!this.isValidType(type))
+            return false;
+        if (!this.isValidHandler(handler))
+            return false;
+        var ret = this.on(type, handler);
+        if (ret) {
+            // set `_once` private property after listened,
+            // avoid to modify event handler that has been listened.
+            handler._once = true;
+        }
+        return ret;
+    };
+    /**
+     * listen off an event by type and handler.
+     * or listen off events by type, when if only type argument is passed.
+     * or listen off all events, when if no arguments are passed.
+     *
+     * @param {string} [type] event type
+     * @param {EventHandler} [handler] event handler
+     * @returns
+     * @memberof EventEmitter
+     * @example
+     *  const emitter = new EventEmitter();
+     *  // listen off the specified event
+     *  emitter.off('change:name', evt => {
+     *    console.log(evt);
+     *  });
+     *  // listen off events by type
+     *  emitter.off('change:name');
+     *  // listen off all events
+     *  emitter.off();
+     */
+    EventEmitter.prototype.off = function (type, handler) {
+        // listen off all events, when if no arguments are passed.
+        // it does samething as `offAll` method.
+        if (!type)
+            return this.offAll();
+        // listen off events by type, when if only type argument is passed.
+        if (!handler) {
+            this.eventHandlers[type] = [];
+            return;
+        }
+        if (!this.isValidType(type))
+            return;
+        if (!this.isValidHandler(handler))
+            return;
+        var handlers = this.eventHandlers[type];
+        if (!handlers || !handlers.length)
+            return;
+        // otherwise, listen off the specified event.
+        for (var i = 0; i < handlers.length; i++) {
+            var fn = handlers[i];
+            if (fn === handler) {
+                handlers.splice(i, 1);
+                break;
+            }
+        }
+    };
+    /**
+     * listen off all events, that means every event will be emptied.
+     *
+     * @memberof EventEmitter
+     * @example
+     *  const emitter = new EventEmitter();
+     *  emitter.offAll();
+     */
+    EventEmitter.prototype.offAll = function () {
+        this.eventHandlers = {};
+    };
+    /**
+     * fire the specified event, and you can to pass a data.
+     * When fired, every handler attached to that event will be executed.
+     * But, if it's an once event, listen off it immediately after called handler.
+     *
+     * @param {string} type event type
+     * @param {*} [data] event data
+     * @returns
+     * @memberof EventEmitter
+     * @example
+     *  const emitter = new EventEmitter();
+     *  emitter.fire('change:name', 'new name');
+     */
+    EventEmitter.prototype.fire = function (type, data) {
+        if (!type || !this.isValidType(type))
+            return;
+        var handlers = this.eventHandlers[type];
+        if (!handlers || !handlers.length)
+            return;
+        var event = this.createEvent(type, data);
+        for (var _i = 0, handlers_1 = handlers; _i < handlers_1.length; _i++) {
+            var handler = handlers_1[_i];
+            if (!this.isValidHandler(handler))
+                continue;
+            if (handler._once)
+                event.once = true;
+            // call event handler, and pass the event argument.
+            handler(event);
+            // if it's an once event, listen off it immediately after called handler.
+            if (event.once)
+                this.off(type, handler);
+        }
+    };
+    /**
+     * check whether the specified event has been listen on.
+     * or check whether the events by type has been listen on, when if only `type` argument is passed.
+     *
+     * @param {string} type event type
+     * @param {EventHandler} [handler] event handler, optional
+     * @returns {boolean}
+     * @memberof EventEmitter
+     * @example
+     *  const emitter = new EventEmitter();
+     *  const result = emitter.has('change:name');
+     */
+    EventEmitter.prototype.has = function (type, handler) {
+        if (!type || !this.isValidType(type))
+            return false;
+        var handlers = this.eventHandlers[type];
+        // if there are no any events, return false.
+        if (!handlers || !handlers.length)
+            return false;
+        // at lest one event, and no pass `handler` argument, then return true.
+        if (!handler || !this.isValidHandler(handler))
+            return true;
+        // otherwise, need to traverse the handlers.
+        return handlers.indexOf(handler) >= 0;
+    };
+    /**
+     * get the handlers for the specified event type.
+     *
+     * @param {string} type event type
+     * @returns {EventHandler[]}
+     * @memberof EventEmitter
+     * @example
+     *  const emitter = new EventEmitter();
+     *  const handlers = emitter.getHandlers('change:name');
+     *  console.log(handlers);
+     */
+    EventEmitter.prototype.getHandlers = function (type) {
+        if (!type || !this.isValidType(type))
+            return [];
+        return this.eventHandlers[type] || [];
+    };
+    /**
+     * create event object.
+     *
+     * @param {string} type event type
+     * @param {*} [data] event data
+     * @param {boolean} [once=false] is it an once event?
+     * @returns {Event}
+     * @memberof EventEmitter
+     */
+    EventEmitter.prototype.createEvent = function (type, data, once) {
+        if (once === void 0) { once = false; }
+        var event = { type: type, data: data, once: once, timestamp: Date.now() };
+        return event;
+    };
+    return EventEmitter;
+}());
+
+
+
+/***/ },
+
+/***/ "./src/scripts/core/facade.ts"
+/*!************************************!*\
+  !*** ./src/scripts/core/facade.ts ***!
+  \************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   createFacade: () => (/* binding */ createFacade)
+/* harmony export */ });
+var c2o = [
+    'pro110d',
+    'pro1130',
+    'pro112b',
+    'pro1120',
+    'pro1190',
+    'pro118b',
+    'pro1185',
+    'pro11a1',
+];
+var createFacade = function (instance) {
+    return {
+        on: function (type, handler) {
+            var typeToHandle = type;
+            if (c2o.indexOf(instance.options.id) !== -1 && type === 'ready') {
+                typeToHandle = 'init';
+            }
+            instance.getBroadcast().on(typeToHandle, handler);
+        },
+        once: function (type, handler) {
+            instance.getBroadcast().once(type, handler);
+        },
+        off: function (type, handler) {
+            instance.getBroadcast().off(type, handler);
+        },
+        offAll: function () {
+            instance.getBroadcast().offAll();
+        },
+        showChatbox: function () {
+            instance.getWidgetManager().getChatboxWidget().show();
+        },
+        hideChatbox: function () {
+            instance.getWidgetManager().getChatboxWidget().hide();
+        },
+        showButton: function () {
+            instance.getWidgetManager().getChatButtonWidget().show();
+            instance.getWidgetManager().getWhatsappButtonWidget().show();
+            instance.getWidgetManager().getUnreadWidget().show();
+        },
+        hideButton: function () {
+            instance.getWidgetManager().getChatButtonWidget().hide();
+            instance.getWidgetManager().getWhatsappButtonWidget().hide();
+            instance.getWidgetManager().getUnreadWidget().hide();
+        },
+        setButtonText: function (text) {
+            instance.getWidgetManager().getChatButtonWidget().setContent(text);
+        },
+        showTeaser: function () {
+            instance.getWidgetManager().getTeaserWidget().show();
+        },
+        hideTeaser: function () {
+            instance.getWidgetManager().getTeaserWidget().hide();
+        },
+        setTeaserText: function (text) {
+            instance.getWidgetManager().getTeaserWidget().setContent(text);
+        },
+        setPosition: function (position) {
+            instance.getWidgetManager().getWrapperWidget().setPosition(position);
+        },
+        setTheme: function (theme) {
+            instance.getWidgetManager().getWrapperWidget().setTheme(theme);
+        },
+        showActionButtons: function () {
+            instance.getWidgetManager().getActionButtonGroupWidget().show();
+        },
+        hideActionButtons: function () {
+            instance.getWidgetManager().getActionButtonGroupWidget().hide();
+        },
+        setActionButtons: function (buttons) {
+            instance.setActionButtons(buttons);
+        },
+        getContext: function (key) {
+            return instance.getContext(key);
+        },
+        setContext: function (key, value) {
+            return instance.setContext(key, value);
+        },
+        getConfig: function () {
+            return instance.getConfig();
+        },
+        getClientConfig: function () {
+            return instance.getClientConfig();
+        },
+        setUnreadCounter: function (amount) {
+            instance.getWidgetManager().getUnreadWidget().setCounter(amount);
+        },
+        increaseUnreadCounter: function (amount) {
+            instance.getWidgetManager().getUnreadWidget().increase(amount);
+        },
+        triggerElement: function (options) {
+            instance.triggerElement(options);
+        },
+        setInitialElement: function (options) {
+            instance.setInitialElement(options);
+        },
+        getInitialElement: function () {
+            return instance.getInitialElement();
+        },
+        isChatboxVisible: function () {
+            var chatbox = instance.getWidgetManager().getChatboxWidget();
+            return chatbox ? chatbox.isVisible() : false;
+        },
+        destroy: function () {
+            instance.destroy();
+        },
+        isDestroyed: function () {
+            return instance.isDestroyed();
+        },
+        isReady: function () {
+            return instance.isReady();
+        },
+        setLocale: function (locale) {
+            instance.setLocale(locale);
+        },
+    };
+};
+
+
+/***/ },
+
+/***/ "./src/scripts/core/observable.ts"
+/*!****************************************!*\
+  !*** ./src/scripts/core/observable.ts ***!
+  \****************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Observable: () => (/* binding */ Observable)
+/* harmony export */ });
+/* harmony import */ var _event_emitter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./event-emitter */ "./src/scripts/core/event-emitter.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+var Observable = /** @class */ (function (_super) {
+    __extends(Observable, _super);
+    function Observable(options) {
+        var _this = _super.call(this) || this;
+        var events = options.events || [];
+        events.forEach(function (item) {
+            if (item.once) {
+                _this.once(item.type, item.callback);
+            }
+            else {
+                _this.on(item.type, item.callback);
+            }
+        });
+        return _this;
+    }
+    Observable.prototype.destroy = function () {
+        this.offAll();
+    };
+    return Observable;
+}(_event_emitter__WEBPACK_IMPORTED_MODULE_0__.EventEmitter));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/core/utils.ts"
+/*!***********************************!*\
+  !*** ./src/scripts/core/utils.ts ***!
+  \***********************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   inIframe: () => (/* binding */ inIframe),
+/* harmony export */   injectCss: () => (/* binding */ injectCss),
+/* harmony export */   isCrawler: () => (/* binding */ isCrawler),
+/* harmony export */   isExternalUrl: () => (/* binding */ isExternalUrl),
+/* harmony export */   isFontLoaded: () => (/* binding */ isFontLoaded),
+/* harmony export */   isObject: () => (/* binding */ isObject),
+/* harmony export */   loadOpenSans: () => (/* binding */ loadOpenSans),
+/* harmony export */   mergeDeep: () => (/* binding */ mergeDeep),
+/* harmony export */   parseUrlParam: () => (/* binding */ parseUrlParam),
+/* harmony export */   removeURLParameters: () => (/* binding */ removeURLParameters)
+/* harmony export */ });
+var parseUrlParam = function (source, name, defaultReturn) {
+    if (defaultReturn === void 0) { defaultReturn = null; }
+    var url = new URL(source);
+    var param = url.searchParams.get(name);
+    if (param && param.length >= 1) {
+        return param;
+    }
+    return defaultReturn;
+};
+var isExternalUrl = function (url) {
+    var match = url.match(/^([^:\/?#]+:)?(?:\/\/([^\/?#]*))?([^?#]+)?(\?[^#]*)?(#.*)?/);
+    if (match != null &&
+        typeof match[1] === 'string' &&
+        match[1].length > 0 &&
+        match[1].toLowerCase() !== location.protocol) {
+        return true;
+    }
+    if (match != null &&
+        typeof match[2] === 'string' &&
+        match[2].length > 0 &&
+        match[2].replace(new RegExp(":( + { 'http:': 80, 'https:': 443 }[".concat(location.protocol, "] + )?$")), '') !== location.host) {
+        return true;
+    }
+    return false;
+};
+var injectCss = function (css) {
+    var style = document.createElement('style');
+    var head = document.querySelector('head');
+    style.type = 'text/css';
+    style.innerHTML = css;
+    if (head !== null) {
+        head.appendChild(style);
+    }
+};
+var isFontLoaded = function (fontName) {
+    var canvas = document.createElement('canvas');
+    var context = canvas.getContext('2d');
+    var text = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    if (context === null) {
+        return false;
+    }
+    context.font = '72px monospace';
+    var baselineSize = context.measureText(text).width;
+    context.font = "72px ".concat(fontName, ", monospace");
+    var newSize = context.measureText(text).width;
+    canvas = null;
+    return newSize !== baselineSize;
+};
+var loadOpenSans = function () { };
+var isObject = function (item) {
+    return item && typeof item === 'object' && !Array.isArray(item);
+};
+var mergeDeep = function (target, source) {
+    var output = Object.assign({}, target);
+    if (isObject(target) && isObject(source)) {
+        // @ts-ignore
+        Object.keys(source).forEach(function (key) {
+            var _a, _b;
+            if (isObject(source[key])) {
+                if (!(key in target))
+                    Object.assign(output, (_a = {}, _a[key] = source[key], _a));
+                else
+                    output[key] = mergeDeep(target[key], source[key]);
+            }
+            else {
+                Object.assign(output, (_b = {}, _b[key] = source[key], _b));
+            }
+        });
+    }
+    return output;
+};
+var removeURLParameters = function (removeParams) {
+    var deleteRegex = new RegExp("".concat(removeParams.join('=|'), "="));
+    var params = location.search.slice(1).split('&');
+    var search = [];
+    for (var i = 0; i < params.length; i++) {
+        if (!deleteRegex.test(params[i])) {
+            search.push(params[i]);
+        }
+    }
+    var searchString = search.length ? "?".concat(search.join('&')) : '';
+    var redirectUrl = "".concat(location.pathname).concat(searchString).concat(location.hash);
+    window.history.replaceState({}, document.title, redirectUrl);
+};
+var isCrawler = function () {
+    return /bot|google|baidu|bing|msn|teoma|slurp|yandex/i.test(navigator.userAgent);
+};
+var inIframe = function () {
+    try {
+        return window.self !== window.top;
+    }
+    catch (e) {
+        return true;
+    }
+};
+
+
+/***/ },
+
+/***/ "./src/scripts/core/widget-manager.ts"
+/*!********************************************!*\
+  !*** ./src/scripts/core/widget-manager.ts ***!
+  \********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WidgetManager: () => (/* binding */ WidgetManager)
+/* harmony export */ });
+/* harmony import */ var _widgets_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../widgets/index */ "./src/scripts/widgets/index.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/config */ "./src/scripts/config/config.ts");
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
+
+var getTeaserText = function (_a) {
+    var teaserText = _a.teaserText, locale = _a.locale, defaultLocale = _a.defaultLocale;
+    var content = 'Can I help you?';
+    if (teaserText && locale !== undefined) {
+        if (teaserText[locale]) {
+            content = teaserText[locale];
+        }
+        else if (defaultLocale && teaserText[defaultLocale]) {
+            content = teaserText[defaultLocale];
+        }
+    }
+    return content;
+};
+var WidgetManager = /** @class */ (function () {
+    function WidgetManager(app) {
+        this.app = app;
+    }
+    WidgetManager.prototype.getWebchatService = function () {
+        return this.app.getWebchatService();
+    };
+    WidgetManager.prototype.getBroadcast = function () {
+        return this.app.getBroadcast();
+    };
+    WidgetManager.prototype.isAppReady = function () {
+        return this.app.isReady();
+    };
+    WidgetManager.prototype.renderHeader = function (options) {
+        var _this = this;
+        this.headerWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.HeaderWidget({
+            renderTo: this.chatboxWidget.getBoxElem(),
+            leftCloseButton: options.leftCloseButton,
+        });
+        this.headerWidget.getCloseButton().on('click', function () {
+            if (_this.whatsappWindowWidget && _this.whatsappWindowWidget.isVisible()) {
+                _this.whatsappWindowWidget.hide();
+            }
+            else {
+                _this.chatboxWidget.hide();
+            }
+        });
+    };
+    WidgetManager.prototype.renderIframeBox = function () {
+        this.iframeBoxWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.IframeBoxWidget({
+            visible: false,
+            renderTo: this.wrapperWidget.getBoxElem(),
+        });
+    };
+    WidgetManager.prototype.renderFooter = function () {
+        this.footerWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.FooterWidget({
+            renderTo: this.wrapperWidget.getBoxElem(),
+        });
+    };
+    WidgetManager.prototype.renderWrapper = function (options) {
+        this.wrapperWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.WrapperWidget({
+            renderTo: document.body,
+            position: options.position,
+            theme: options.theme,
+            direction: options.direction,
+            baseCustomCls: options.baseCls,
+            visible: options.visible,
+        });
+        if (!options.renderButton) {
+            this.wrapperWidget.addCls(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.wrapperNoButtonCls);
+        }
+    };
+    WidgetManager.prototype.renderContentWrapper = function () {
+        this.contentWrapperWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.ContentWrapperWidget({
+            renderTo: this.wrapperWidget.getBoxElem(),
+        });
+    };
+    WidgetManager.prototype.renderChatButton = function (options, chatConfig) {
+        var _this = this;
+        var _a;
+        var locale = options.locale;
+        var buttonText = chatConfig.buttonText, defaultLocale = chatConfig.defaultLocale, effects = chatConfig.effects;
+        var content = '';
+        if (buttonText && locale !== undefined) {
+            if (buttonText[locale]) {
+                content = buttonText[locale];
+            }
+            else if (defaultLocale && buttonText[defaultLocale]) {
+                content = buttonText[defaultLocale];
+            }
+        }
+        this.chatButtonWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.ChatButtonWidget({
+            content: content,
+            renderTo: this.footerWidget.getBoxElem(),
+            visible: options.isButtonVisible,
+            effects: effects === null || effects === void 0 ? void 0 : effects.chatButton,
+            iconUrl: (_a = options.iconUrl) !== null && _a !== void 0 ? _a : undefined,
+            events: [
+                {
+                    type: 'toggle',
+                    callback: function (event) {
+                        event.data.isPressed
+                            ? _this.chatboxWidget.show()
+                            : _this.chatboxWidget.hide();
+                    },
+                },
+                {
+                    type: 'before:show',
+                    callback: function () { return _this.getBroadcast().fire('button.show.before'); },
+                },
+                {
+                    type: 'show',
+                    callback: function () { return _this.getBroadcast().fire('button.show'); },
+                },
+                {
+                    type: 'before:hide',
+                    callback: function () { return _this.getBroadcast().fire('button.hide.before'); },
+                },
+                {
+                    type: 'hide',
+                    callback: function () { return _this.getBroadcast().fire('button.hide'); },
+                },
+            ],
+        });
+        this.chatButtonWidget.once('toggle', function () {
+            _this.chatButtonWidget.stopAttention();
+            if (_this.whatsappButtonWidget) {
+                _this.whatsappButtonWidget.stopAttention();
+            }
+        });
+    };
+    WidgetManager.prototype.renderIframeWidget = function (options, afterRender) {
+        this.iframeWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.IframeWidget({
+            host: options.host,
+            id: options.id,
+            initialElement: options.initialElement,
+            locale: options.locale,
+            renderTo: this.getChatboxWidget().getBoxElem(),
+            channel: options.channel,
+            events: [
+                {
+                    type: 'render',
+                    callback: function () {
+                        afterRender();
+                    },
+                },
+            ],
+        });
+    };
+    WidgetManager.prototype.renderTeaserWidget = function (options, chatConfig, isTeaserVisible) {
+        var _this = this;
+        var locale = options.locale;
+        var teaserText = chatConfig.teaserText, defaultLocale = chatConfig.defaultLocale, effects = chatConfig.effects;
+        var content = getTeaserText({ teaserText: teaserText, locale: locale, defaultLocale: defaultLocale });
+        this.teaserWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.TeaserWidget({
+            content: content,
+            showTeaserOnce: chatConfig.showTeaserOnce,
+            hideTeaserAfterTimes: chatConfig.hideTeaserAfterTimes,
+            renderTo: this.contentWrapperWidget.getBoxElem(),
+            visible: isTeaserVisible,
+            effects: effects === null || effects === void 0 ? void 0 : effects.teaser,
+            custidStoreMode: options.custidStoreMode,
+            events: [
+                {
+                    type: 'before:show',
+                    callback: function () {
+                        _this.getBroadcast().fire('teaser.show.before');
+                        if (_this.actionButtonGroupWidget) {
+                            _this.actionButtonGroupWidget.show();
+                        }
+                        _this.wrapperWidget.addCls(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.wrapperTeaserIsOpenCls);
+                    },
+                },
+                {
+                    type: 'show',
+                    callback: function () { return _this.getBroadcast().fire('teaser.show'); },
+                },
+                {
+                    type: 'before:hide',
+                    callback: function () {
+                        _this.wrapperWidget.removeCls(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.wrapperTeaserIsOpenCls);
+                        if (_this.actionButtonGroupWidget) {
+                            _this.actionButtonGroupWidget.hide();
+                        }
+                        _this.getBroadcast().fire('teaser.hide.before');
+                    },
+                },
+                {
+                    type: 'hide',
+                    callback: function () { return _this.getBroadcast().fire('teaser.hide'); },
+                },
+                {
+                    type: 'click',
+                    callback: function () { return _this.chatboxWidget.show(); },
+                },
+            ],
+        });
+    };
+    WidgetManager.prototype.renderUnreadWidget = function (options, chatConfig) {
+        var _a;
+        var effects = chatConfig.effects;
+        this.unreadWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.UnreadWidget({
+            visible: ((_a = options.unreadCounter) !== null && _a !== void 0 ? _a : 0) > 0,
+            renderTo: this.wrapperWidget.getBoxElem(),
+            unreadCounter: options.unreadCounter,
+            effects: effects === null || effects === void 0 ? void 0 : effects.unreadCounter,
+        });
+    };
+    WidgetManager.prototype.renderChatboxWidget = function (options, beforeShowCallback) {
+        var _this = this;
+        this.chatboxWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.ChatboxWidget({
+            visible: options.isChatboxVisible,
+            hasExtendedWidth: options.extendedWidth,
+            events: [
+                {
+                    type: 'before:show',
+                    callback: function () {
+                        _this.getBroadcast().fire('chatbox.show.before');
+                        _this.teaserWidget.hide();
+                        if (_this.unreadWidget) {
+                            _this.unreadWidget.reset();
+                        }
+                        if (_this.chatButtonWidget) {
+                            _this.chatButtonWidget.toggle(true);
+                        }
+                        if (_this.getWebchatService()) {
+                            _this.getWebchatService().setMinimized(false);
+                        }
+                        beforeShowCallback();
+                    },
+                },
+                {
+                    type: 'show',
+                    callback: function () { return _this.getBroadcast().fire('chatbox.show'); },
+                },
+                {
+                    type: 'before:hide',
+                    callback: function () {
+                        _this.getBroadcast().fire('chatbox.hide.before');
+                        if (_this.teaserWidget.isVisible()) {
+                            _this.teaserWidget.show();
+                        }
+                        if (_this.iframeBoxWidget.isVisible()) {
+                            _this.iframeBoxWidget.hide();
+                        }
+                        if (_this.chatButtonWidget) {
+                            _this.chatButtonWidget.toggle(false);
+                        }
+                        if (_this.getWebchatService()) {
+                            _this.getWebchatService().setMinimized(true);
+                        }
+                    },
+                },
+                {
+                    type: 'hide',
+                    callback: function () {
+                        _this.getBroadcast().fire('chatbox.hide');
+                    },
+                },
+            ],
+        });
+        this.chatboxWidget.render(this.wrapperWidget.getBoxElem());
+        this.getBroadcast().on('ready', function () {
+            _this.chatboxWidget.setState('ready');
+        });
+    };
+    WidgetManager.prototype.renderActionButtonGroupWidget = function (app, options, chatConfig) {
+        var _this = this;
+        var actionButtons = chatConfig.actionButtons, effects = chatConfig.effects;
+        this.actionButtonGroupWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.ActionButtonGroupWidget({
+            renderTo: this.contentWrapperWidget.getBoxElem(),
+            effects: effects === null || effects === void 0 ? void 0 : effects.actionButtons,
+            visible: actionButtons &&
+                actionButtons.length > 0 &&
+                this.teaserWidget.isVisible(),
+        });
+        if (actionButtons && actionButtons.length > 0) {
+            actionButtons.forEach(function (item) {
+                _this.actionButtonGroupWidget.addButton(__assign(__assign({}, item), { app: app, locale: options.locale, defaultLocale: chatConfig.defaultLocale }));
+            });
+        }
+    };
+    WidgetManager.prototype.renderWhatsappButtonWidget = function (chatConfig) {
+        var _this = this;
+        var effects = chatConfig.effects, bwWaButton = chatConfig.bwWaButton, slideWaButton = chatConfig.slideWaButton;
+        this.whatsappButtonWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.WhatsappButtonWidget({
+            slideWaButton: slideWaButton,
+            renderTo: this.footerWidget.getBoxElem(),
+            effects: effects === null || effects === void 0 ? void 0 : effects.whatsappButton,
+            blackWhiteStyle: bwWaButton,
+            events: [
+                {
+                    type: 'toggle',
+                    callback: function (event) {
+                        if (event.data.isPressed) {
+                            if (!_this.isAppReady()) {
+                                _this.getBroadcast().once('ready', function () {
+                                    if (_this.whatsappWindowWidget) {
+                                        _this.whatsappWindowWidget.show();
+                                    }
+                                });
+                            }
+                            else {
+                                if (_this.whatsappWindowWidget) {
+                                    _this.whatsappWindowWidget.show();
+                                }
+                            }
+                            _this.chatButtonWidget.toggle(true);
+                            _this.wrapperWidget.addCls('ds-whatsapp--opened');
+                        }
+                        else {
+                            if (_this.whatsappWindowWidget) {
+                                _this.whatsappWindowWidget.hide();
+                            }
+                            _this.wrapperWidget.removeCls('ds-whatsapp--opened');
+                        }
+                    },
+                },
+            ],
+        });
+        this.chatboxWidget.on('before:hide', function () {
+            _this.whatsappButtonWidget.toggle(false);
+        });
+    };
+    WidgetManager.prototype.renderWhatsappWindowWidget = function (options) {
+        var _this = this;
+        this.whatsappWindowWidget = new _widgets_index__WEBPACK_IMPORTED_MODULE_0__.WhatsappWindowWidget({
+            renderTo: this.chatboxWidget.getBoxElem(),
+            visible: false,
+            clientId: options.id,
+            locale: options.locale,
+            events: [
+                {
+                    type: 'before:hide',
+                    callback: function () {
+                        _this.iframeWidget.show();
+                        if (_this.whatsappButtonWidget) {
+                            _this.whatsappButtonWidget.toggle(false);
+                        }
+                    },
+                },
+                {
+                    type: 'before:show',
+                    callback: function () {
+                        _this.iframeWidget.hide();
+                    },
+                },
+            ],
+        });
+        this.chatboxWidget.on('before:hide', function () {
+            if (_this.whatsappWindowWidget) {
+                _this.whatsappWindowWidget.hide();
+            }
+        });
+    };
+    WidgetManager.prototype.getChatButtonWidget = function () {
+        return this.chatButtonWidget;
+    };
+    WidgetManager.prototype.getWrapperWidget = function () {
+        return this.wrapperWidget;
+    };
+    WidgetManager.prototype.getIframeWidget = function () {
+        return this.iframeWidget;
+    };
+    WidgetManager.prototype.getChatboxWidget = function () {
+        return this.chatboxWidget;
+    };
+    WidgetManager.prototype.getTeaserWidget = function () {
+        return this.teaserWidget;
+    };
+    WidgetManager.prototype.getUnreadWidget = function () {
+        return this.unreadWidget;
+    };
+    WidgetManager.prototype.getActionButtonGroupWidget = function () {
+        return this.actionButtonGroupWidget;
+    };
+    WidgetManager.prototype.getWhatsappButtonWidget = function () {
+        return this.whatsappButtonWidget;
+    };
+    WidgetManager.prototype.getWhatsappWindowWidget = function () {
+        return this.whatsappWindowWidget;
+    };
+    WidgetManager.prototype.getIframeBoxWidget = function () {
+        return this.iframeBoxWidget;
+    };
+    WidgetManager.prototype.setLocale = function (locale, chatConfig) {
+        var teaserText = chatConfig.teaserText, defaultLocale = chatConfig.defaultLocale;
+        if (this.teaserWidget) {
+            var teaserContent = getTeaserText({ teaserText: teaserText, locale: locale, defaultLocale: defaultLocale });
+            this.teaserWidget.setContent(teaserContent);
+        }
+        if (this.actionButtonGroupWidget) {
+            var buttons = this.actionButtonGroupWidget.getButtons();
+            buttons.forEach(function (button) { return button.setLocale(locale); });
+        }
+        if (this.whatsappWindowWidget) {
+            this.whatsappWindowWidget.setLocale(locale);
+        }
+    };
+    WidgetManager.prototype.destroy = function () {
+        if (this.unreadWidget) {
+            this.unreadWidget.destroy();
+        }
+        if (this.teaserWidget) {
+            this.teaserWidget.destroy();
+        }
+        if (this.chatButtonWidget) {
+            this.chatButtonWidget.destroy();
+        }
+        if (this.iframeWidget) {
+            this.iframeWidget.destroy();
+        }
+        if (this.chatboxWidget) {
+            this.chatboxWidget.destroy();
+        }
+        if (this.wrapperWidget) {
+            this.wrapperWidget.destroy();
+        }
+        if (this.actionButtonGroupWidget) {
+            this.actionButtonGroupWidget.destroy();
+        }
+        if (this.iframeBoxWidget) {
+            this.iframeBoxWidget.destroy();
+        }
+        if (this.headerWidget) {
+            this.headerWidget.destroy();
+        }
+        if (this.footerWidget) {
+            this.footerWidget.destroy();
+        }
+        if (this.whatsappButtonWidget) {
+            this.whatsappButtonWidget.destroy();
+        }
+        if (this.whatsappWindowWidget) {
+            this.whatsappWindowWidget.destroy();
+        }
+    };
+    return WidgetManager;
+}());
+
+
+
+/***/ },
+
+/***/ "./src/scripts/enums.ts"
+/*!******************************!*\
+  !*** ./src/scripts/enums.ts ***!
+  \******************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   CustidStoreMode: () => (/* binding */ CustidStoreMode)
+/* harmony export */ });
+var CustidStoreMode;
+(function (CustidStoreMode) {
+    CustidStoreMode["cookie"] = "cookie";
+    CustidStoreMode["session"] = "session";
+})(CustidStoreMode || (CustidStoreMode = {}));
+
+
+/***/ },
+
+/***/ "./src/scripts/models/action-button.ts"
+/*!*********************************************!*\
+  !*** ./src/scripts/models/action-button.ts ***!
+  \*********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ActionButton: () => (/* binding */ ActionButton),
+/* harmony export */   ActionButtonNormalizer: () => (/* binding */ ActionButtonNormalizer),
+/* harmony export */   ActionButtonType: () => (/* binding */ ActionButtonType)
+/* harmony export */ });
+var ActionButtonType;
+(function (ActionButtonType) {
+    ActionButtonType["quickreply"] = "quickreply";
+    ActionButtonType["callback"] = "callback";
+})(ActionButtonType || (ActionButtonType = {}));
+var ActionButton = /** @class */ (function () {
+    function ActionButton(options) {
+        this.type = options.type;
+        this.successor = options.successor;
+        this.l10n = options.l10n;
+        if (options.callback) {
+            this.callback = options.callback;
+        }
+        if (options.defaultLocale) {
+            this.defaultLocale = options.defaultLocale;
+        }
+    }
+    ActionButton.fromJson = function (json) {
+        var normalizedData = ActionButtonNormalizer.normalize(json);
+        return new ActionButton(normalizedData);
+    };
+    ActionButton.prototype.getTitle = function (locale) {
+        if (this.l10n[locale]) {
+            return this.l10n[locale].title;
+        }
+        if (this.l10n[this.defaultLocale]) {
+            return this.l10n[this.defaultLocale].title;
+        }
+        return null;
+    };
+    ActionButton.prototype.getSuccessor = function () {
+        return this.successor;
+    };
+    ActionButton.prototype.getType = function () {
+        return this.type;
+    };
+    ActionButton.prototype.getCallback = function () {
+        return this.callback;
+    };
+    return ActionButton;
+}());
+
+var ActionButtonNormalizer = /** @class */ (function () {
+    function ActionButtonNormalizer() {
+    }
+    ActionButtonNormalizer.normalize = function (data) {
+        var locales = ['en', 'de', 'fr', 'it', 'ru', 'ar', 'nl', 'cz', 'hu', 'ro', 'es', 'da', 'pl', 'cs', 'sv', 'pt', 'sk'];
+        var result = {
+            type: data.type,
+            successor: data.successor,
+            l10n: {},
+        };
+        locales.forEach(function (locale) {
+            if (data.hasOwnProperty(locale)) {
+                result.l10n[locale] = data[locale];
+            }
+        });
+        if (data.callback) {
+            result.callback = data.callback;
+        }
+        if (data.defaultLocale) {
+            result.defaultLocale = data.defaultLocale;
+        }
+        return result;
+    };
+    return ActionButtonNormalizer;
+}());
+
+
+
+/***/ },
+
+/***/ "./src/scripts/models/index.ts"
+/*!*************************************!*\
+  !*** ./src/scripts/models/index.ts ***!
+  \*************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ActionButton: () => (/* reexport safe */ _action_button__WEBPACK_IMPORTED_MODULE_0__.ActionButton),
+/* harmony export */   ActionButtonNormalizer: () => (/* reexport safe */ _action_button__WEBPACK_IMPORTED_MODULE_0__.ActionButtonNormalizer),
+/* harmony export */   ActionButtonType: () => (/* reexport safe */ _action_button__WEBPACK_IMPORTED_MODULE_0__.ActionButtonType)
+/* harmony export */ });
+/* harmony import */ var _action_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./action-button */ "./src/scripts/models/action-button.ts");
+
+
+
+/***/ },
+
+/***/ "./src/scripts/services/api.service.ts"
+/*!*********************************************!*\
+  !*** ./src/scripts/services/api.service.ts ***!
+  \*********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ApiService: () => (/* binding */ ApiService)
+/* harmony export */ });
+/* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./http.service */ "./src/scripts/services/http.service.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/config */ "./src/scripts/config/config.ts");
+
+
+var ApiService = /** @class */ (function () {
+    function ApiService() {
+    }
+    ApiService.getTransport = function () {
+        return _http_service__WEBPACK_IMPORTED_MODULE_0__.HttpService;
+    };
+    ApiService.getCoreEndpoint = function () {
+        return _config_config__WEBPACK_IMPORTED_MODULE_1__.config.env.coreApiEndpoint;
+    };
+    ApiService.getIbeEndpoint = function () {
+        return _config_config__WEBPACK_IMPORTED_MODULE_1__.config.env.ibeApiEndpoint;
+    };
+    ApiService.setContext = function (customerId, key, value) {
+        var context = {};
+        context[key] = value;
+        var data = {
+            custid: customerId,
+            context: JSON.stringify(context),
+        };
+        return ApiService.getTransport().postRequest("".concat(ApiService.getCoreEndpoint(), "/config/context"), data);
+    };
+    ApiService.getContext = function (customerId, variable) {
+        return ApiService.getTransport()
+            .getRequest("".concat(ApiService.getCoreEndpoint(), "/config/context/").concat(customerId, "/").concat(variable))
+            .then(function (response) {
+            return response[variable] ? response[variable] : null;
+        });
+    };
+    ApiService.getConfig = function (clientId, customerId, host, path, channel) {
+        if (customerId === void 0) { customerId = 'none'; }
+        var url = "".concat(ApiService.getCoreEndpoint(), "/config/webapp/").concat(clientId, "/").concat(customerId);
+        var queryData = {
+            host: host,
+            path: path,
+        };
+        if (channel) {
+            queryData['channel'] = channel;
+        }
+        var queryString = new URLSearchParams(queryData);
+        url += "?".concat(queryString.toString());
+        return ApiService.getTransport().getRequest(url);
+    };
+    ApiService.createUser = function (options) {
+        var url = "".concat(ApiService.getCoreEndpoint(), "/customer/v2/createnew/").concat(options.source, "/").concat(options.clientId, "/").concat(options.locale);
+        if (options.csrfToken) {
+            url += "?csrftoken=".concat(options.csrfToken);
+        }
+        if (options.context) {
+            options.csrfToken ? (url += '&') : (url += '?');
+            url += "context=".concat(encodeURIComponent(JSON.stringify(options.context)));
+        }
+        url.indexOf('?') === -1 ? (url += '?origin=sdk') : (url += '&origin=sdk');
+        url += "&v=".concat("2.11.10");
+        if (options.debug) {
+            url += "&debug=".concat(options.debug);
+        }
+        return ApiService.getTransport().getRequest(url);
+    };
+    ApiService.validateUser = function (options) {
+        var data = {
+            currentURL: options.currentURL,
+            clientid: options.clientId,
+            custid: options.customerId,
+        };
+        if (options.context) {
+            data.context = JSON.stringify(options.context);
+        }
+        return ApiService.getTransport().postRequest("".concat(ApiService.getCoreEndpoint(), "/customer/validate"), data);
+    };
+    ApiService.createToken = function (options) {
+        var data = {
+            clid: options.clientId,
+            sec: options.sec,
+            realUserScore: options.realUserScore,
+        };
+        if (options.csrftoken) {
+            data.csrftoken = options.csrftoken;
+        }
+        return ApiService.getTransport().getRequest("".concat(ApiService.getCoreEndpoint(), "/customer/csrf"), data);
+    };
+    ApiService.getWhatsappLink = function (clientid, custid) {
+        return ApiService.getTransport().getRequest("".concat(ApiService.getIbeEndpoint(), "/whatsapp/onboard"), {
+            clientid: clientid,
+            custid: custid,
+        });
+    };
+    return ApiService;
+}());
+
+
+
+/***/ },
+
+/***/ "./src/scripts/services/audio.service.ts"
+/*!***********************************************!*\
+  !*** ./src/scripts/services/audio.service.ts ***!
+  \***********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   AudioService: () => (/* binding */ AudioService),
+/* harmony export */   AudioSound: () => (/* binding */ AudioSound)
+/* harmony export */ });
+var AudioSound;
+(function (AudioSound) {
+    AudioSound["appear"] = "appear";
+})(AudioSound || (AudioSound = {}));
+var soundConfig = {
+    appear: 'https://assets.dialogshift.com/sounds/appear.mp3',
+};
+var AudioService = /** @class */ (function () {
+    function AudioService() {
+    }
+    AudioService.playSound = function (name) {
+        var url = soundConfig[name];
+        var audio = new Audio(url);
+        try {
+            audio.play();
+        }
+        catch (e) { }
+    };
+    return AudioService;
+}());
+
+
+
+/***/ },
+
+/***/ "./src/scripts/services/cookie.service.ts"
+/*!************************************************!*\
+  !*** ./src/scripts/services/cookie.service.ts ***!
+  \************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   CookieService: () => (/* binding */ CookieService)
+/* harmony export */ });
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var CookieService = /** @class */ (function () {
+    function CookieService() {
+    }
+    CookieService.get = function (name) {
+        var arrcookies = document.cookie.split(';');
+        for (var i = 0; i < arrcookies.length; i++) {
+            var x = arrcookies[i].substr(0, arrcookies[i].indexOf('='));
+            var y = arrcookies[i].substr(arrcookies[i].indexOf('=') + 1);
+            x = x.replace(/^\s+|\s+$/g, '');
+            if (x === name) {
+                return unescape(y);
+            }
+        }
+        return null;
+    };
+    CookieService.set = function (name, value, options) {
+        if (options === void 0) { options = {}; }
+        if (CookieService.noCookieMode) {
+            return;
+        }
+        var params = __assign({ samesite: 'lax', path: '/' }, options);
+        var expires = params.expires;
+        if (typeof expires === 'number' && expires) {
+            var d = new Date();
+            d.setTime(d.getTime() + expires * 1000);
+            expires = params.expires = d;
+        }
+        if (expires && expires.toUTCString) {
+            params.expires = expires.toUTCString();
+        }
+        var encodedValue = encodeURIComponent(value);
+        var updatedCookie = "".concat(name, "=").concat(encodedValue);
+        for (var propName in params) {
+            updatedCookie = "".concat(updatedCookie, "; ").concat(propName);
+            var propValue = params[propName];
+            if (propValue !== true) {
+                updatedCookie = "".concat(updatedCookie, "=").concat(propValue);
+            }
+        }
+        document.cookie = updatedCookie;
+    };
+    CookieService.delete = function (name) {
+        CookieService.set(name, '', {
+            'max-age': -1,
+        });
+    };
+    CookieService.noCookieMode = false;
+    return CookieService;
+}());
+
+
+
+/***/ },
+
+/***/ "./src/scripts/services/ga.service.ts"
+/*!********************************************!*\
+  !*** ./src/scripts/services/ga.service.ts ***!
+  \********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   GaService: () => (/* binding */ GaService)
+/* harmony export */ });
+var GaService = /** @class */ (function () {
+    function GaService() {
+    }
+    GaService.getGaValue = function () {
+        for (var _i = 0, _a = document.cookie.split(';'); _i < _a.length; _i++) {
+            var c = _a[_i];
+            var d = c.trim();
+            if (d.startsWith('_ga=')) {
+                return d.split('=', 2)[1];
+            }
+        }
+        return null;
+    };
+    return GaService;
+}());
+
+
+
+/***/ },
+
+/***/ "./src/scripts/services/http.service.ts"
+/*!**********************************************!*\
+  !*** ./src/scripts/services/http.service.ts ***!
+  \**********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   HttpService: () => (/* binding */ HttpService)
+/* harmony export */ });
+var HttpService = /** @class */ (function () {
+    function HttpService() {
+    }
+    HttpService.processError = function (response) {
+        if (response.status >= 200 && response.status < 300) {
+            return Promise.resolve(response);
+        }
+        return Promise.reject(new Error(response.statusText));
+    };
+    HttpService.processJson = function (response) {
+        return response.json();
+    };
+    HttpService.getRequest = function (url, options) {
+        var queryString = options
+            ? "".concat(url, "?").concat(new URLSearchParams(options).toString())
+            : url;
+        return fetch(queryString).then(this.processError).then(this.processJson);
+    };
+    HttpService.postRequest = function (url, data) {
+        if (data === void 0) { data = {}; }
+        return fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            mode: 'cors',
+            body: JSON.stringify(data),
+        }).then(this.processError);
+    };
+    return HttpService;
+}());
+
+
+
+/***/ },
+
+/***/ "./src/scripts/services/index.ts"
+/*!***************************************!*\
+  !*** ./src/scripts/services/index.ts ***!
+  \***************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ApiService: () => (/* reexport safe */ _api_service__WEBPACK_IMPORTED_MODULE_0__.ApiService),
+/* harmony export */   CookieService: () => (/* reexport safe */ _cookie_service__WEBPACK_IMPORTED_MODULE_3__.CookieService),
+/* harmony export */   HttpService: () => (/* reexport safe */ _http_service__WEBPACK_IMPORTED_MODULE_1__.HttpService),
+/* harmony export */   TokenService: () => (/* reexport safe */ _token_service__WEBPACK_IMPORTED_MODULE_5__.TokenService),
+/* harmony export */   UserService: () => (/* reexport safe */ _user_service__WEBPACK_IMPORTED_MODULE_4__.UserService),
+/* harmony export */   WebchatService: () => (/* reexport safe */ _webchat_service__WEBPACK_IMPORTED_MODULE_2__.WebchatService)
+/* harmony export */ });
+/* harmony import */ var _api_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.service */ "./src/scripts/services/api.service.ts");
+/* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./http.service */ "./src/scripts/services/http.service.ts");
+/* harmony import */ var _webchat_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./webchat.service */ "./src/scripts/services/webchat.service.ts");
+/* harmony import */ var _cookie_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cookie.service */ "./src/scripts/services/cookie.service.ts");
+/* harmony import */ var _user_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./user.service */ "./src/scripts/services/user.service.ts");
+/* harmony import */ var _token_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./token.service */ "./src/scripts/services/token.service.ts");
+
+
+
+
+
+
+
+
+/***/ },
+
+/***/ "./src/scripts/services/token.service.ts"
+/*!***********************************************!*\
+  !*** ./src/scripts/services/token.service.ts ***!
+  \***********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   TokenService: () => (/* binding */ TokenService)
+/* harmony export */ });
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! . */ "./src/scripts/services/index.ts");
+/* harmony import */ var _core_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/utils */ "./src/scripts/core/utils.ts");
+
+
+var csrfCookieName = 'ds-csrf';
+var TokenService = /** @class */ (function () {
+    function TokenService() {
+    }
+    TokenService.touchToken = function (clientId, csrfAfter) {
+        return new Promise(function (resolve) {
+            var customerId = ___WEBPACK_IMPORTED_MODULE_0__.UserService.getCustomerId();
+            var csrftoken = ___WEBPACK_IMPORTED_MODULE_0__.CookieService.get(csrfCookieName);
+            var sec = btoa(window.screen.width.toString());
+            var realUserScore = (0,_core_utils__WEBPACK_IMPORTED_MODULE_1__.isCrawler)() ? 0 : 100;
+            if (customerId) {
+                resolve(customerId);
+            }
+            else if (csrftoken) {
+                resolve(csrftoken);
+            }
+            else {
+                setTimeout(function () {
+                    if (___WEBPACK_IMPORTED_MODULE_0__.UserService.getCustomerId()) {
+                        return;
+                    }
+                    ___WEBPACK_IMPORTED_MODULE_0__.ApiService.createToken({
+                        clientId: clientId,
+                        csrftoken: csrftoken,
+                        sec: sec,
+                        realUserScore: realUserScore,
+                    }).then(function (response) {
+                        if (!csrftoken) {
+                            ___WEBPACK_IMPORTED_MODULE_0__.CookieService.set(csrfCookieName, response.csrftoken, {
+                                expires: 86400 * 7, // 7 days
+                            });
+                            resolve(response.csrftoken);
+                        }
+                    });
+                }, csrfAfter);
+            }
+        });
+    };
+    TokenService.deleteToken = function () {
+        ___WEBPACK_IMPORTED_MODULE_0__.CookieService.delete(csrfCookieName);
+    };
+    return TokenService;
+}());
+
+
+
+/***/ },
+
+/***/ "./src/scripts/services/user.service.ts"
+/*!**********************************************!*\
+  !*** ./src/scripts/services/user.service.ts ***!
+  \**********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   UserService: () => (/* binding */ UserService)
+/* harmony export */ });
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ */ "./src/scripts/services/index.ts");
+/* harmony import */ var _core_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/utils */ "./src/scripts/core/utils.ts");
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../enums */ "./src/scripts/enums.ts");
+/* harmony import */ var _ga_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ga.service */ "./src/scripts/services/ga.service.ts");
+
+
+
+
+var customerIdCookieName = 'ds-custid';
+var UserService = /** @class */ (function () {
+    function UserService() {
+    }
+    UserService.getCustomerId = function () {
+        if (this.custidStoreMode === _enums__WEBPACK_IMPORTED_MODULE_2__.CustidStoreMode.cookie) {
+            return ___WEBPACK_IMPORTED_MODULE_0__.CookieService.get(customerIdCookieName);
+        }
+        else {
+            var customerId = this.customerId;
+            if (customerId === null) {
+                customerId = ___WEBPACK_IMPORTED_MODULE_0__.CookieService.get(customerIdCookieName);
+            }
+            return customerId;
+        }
+    };
+    UserService.setCustomerId = function (id, expires) {
+        this.saveCustomerId(id, expires);
+        ___WEBPACK_IMPORTED_MODULE_0__.TokenService.deleteToken();
+    };
+    UserService.saveCustomerId = function (id, expires) {
+        if (this.custidStoreMode === _enums__WEBPACK_IMPORTED_MODULE_2__.CustidStoreMode.cookie) {
+            ___WEBPACK_IMPORTED_MODULE_0__.CookieService.set(customerIdCookieName, id, {
+                expires: expires ? expires : 3600 * this.cookieLifetime,
+            });
+        }
+        else {
+            this.customerId = id;
+        }
+    };
+    UserService.deleteCustomerId = function () {
+        if (this.custidStoreMode === _enums__WEBPACK_IMPORTED_MODULE_2__.CustidStoreMode.cookie) {
+            ___WEBPACK_IMPORTED_MODULE_0__.CookieService.delete(customerIdCookieName);
+        }
+        else {
+            this.customerId = null;
+        }
+    };
+    UserService.updateCookieLifetime = function (forgetCustomerAfterHours) {
+        if (this.custidStoreMode === _enums__WEBPACK_IMPORTED_MODULE_2__.CustidStoreMode.cookie && UserService.getCustomerId()) {
+            UserService.setCustomerId(UserService.getCustomerId(), 3600 * forgetCustomerAfterHours);
+        }
+    };
+    UserService.switchToCookieModeAfterConsent = function () {
+        this.custidStoreMode = _enums__WEBPACK_IMPORTED_MODULE_2__.CustidStoreMode.cookie;
+        var customerId = this.customerId;
+        if (customerId !== null) {
+            UserService.saveCustomerId(customerId);
+        }
+    };
+    UserService.switchToSessionModeAfterConsentDismiss = function () {
+        var customerId = ___WEBPACK_IMPORTED_MODULE_0__.CookieService.get(customerIdCookieName);
+        UserService.deleteCustomerId();
+        this.custidStoreMode = _enums__WEBPACK_IMPORTED_MODULE_2__.CustidStoreMode.session;
+        if (customerId !== null) {
+            this.customerId = customerId;
+        }
+    };
+    UserService.touchUser = function (clientId, locale, csrfToken, context) {
+        var _this = this;
+        return new Promise(function (resolve) {
+            var source = 'pwa-embed';
+            var customerId = _this.getCustomerId();
+            if (!clientId) {
+                throw new Error('Client ID is undefined');
+            }
+            if (location.pathname.indexOf('/g/') !== -1) {
+                source = 'pwa-c2o';
+            }
+            if (_this.loadGaContext) {
+                var ga = _ga_service__WEBPACK_IMPORTED_MODULE_3__.GaService.getGaValue();
+                if (ga !== null && context) {
+                    context['_ga'] = ga;
+                }
+            }
+            // remove one month later 03.03.2021
+            if (!customerId && customerId !== 'null') {
+                ___WEBPACK_IMPORTED_MODULE_0__.ApiService.createUser({
+                    clientId: clientId,
+                    source: source,
+                    locale: locale,
+                    csrfToken: csrfToken,
+                    context: context,
+                    debug: '1',
+                }).then(function (data) {
+                    UserService.setCustomerId(data.custid);
+                    resolve(data.custid);
+                });
+            }
+            else {
+                var currentURL = (0,_core_utils__WEBPACK_IMPORTED_MODULE_1__.parseUrlParam)(window.location.href, 'curl');
+                ___WEBPACK_IMPORTED_MODULE_0__.ApiService.validateUser({
+                    clientId: clientId,
+                    customerId: customerId,
+                    currentURL: currentURL,
+                    context: context,
+                })
+                    .then(function () {
+                    resolve(customerId);
+                })
+                    .catch(function () {
+                    ___WEBPACK_IMPORTED_MODULE_0__.ApiService.createUser({
+                        clientId: clientId,
+                        source: source,
+                        locale: locale,
+                        // csrfToken,
+                        debug: '2',
+                    }).then(function (data) {
+                        UserService.setCustomerId(data.custid);
+                        resolve(data.custid);
+                    });
+                });
+            }
+        });
+    };
+    UserService.deleteUser = function () {
+        this.deleteCustomerId();
+    };
+    UserService.custidStoreMode = _enums__WEBPACK_IMPORTED_MODULE_2__.CustidStoreMode.cookie;
+    UserService.loadGaContext = false;
+    UserService.customerId = null;
+    UserService.cookieLifetime = 90;
+    return UserService;
+}());
+
+
+
+/***/ },
+
+/***/ "./src/scripts/services/webchat.service.ts"
+/*!*************************************************!*\
+  !*** ./src/scripts/services/webchat.service.ts ***!
+  \*************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WebchatService: () => (/* binding */ WebchatService)
+/* harmony export */ });
+var WebchatService = /** @class */ (function () {
+    function WebchatService(options) {
+        this.targetWindow = options.targetWindow;
+    }
+    WebchatService.prototype.triggerElement = function (options) {
+        var message = {
+            successor: options.successor,
+            type: 'trigger',
+        };
+        if (options.teaserButton) {
+            message.teaserButton = options.teaserButton;
+        }
+        if (this.targetWindow.contentWindow) {
+            this.targetWindow.contentWindow.postMessage(message, '*');
+        }
+    };
+    WebchatService.prototype.setMinimized = function (isMinimized) {
+        var message = {
+            isMinimized: isMinimized,
+            type: 'setMinimized',
+        };
+        if (this.targetWindow.contentWindow) {
+            this.targetWindow.contentWindow.postMessage(message, '*');
+        }
+    };
+    return WebchatService;
+}());
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/action-button-group.widget.ts"
+/*!***********************************************************!*\
+  !*** ./src/scripts/widgets/action-button-group.widget.ts ***!
+  \***********************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ActionButtonGroupWidget: () => (/* binding */ ActionButtonGroupWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/config */ "./src/scripts/config/config.ts");
+/* harmony import */ var _action_button_widget__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./action-button.widget */ "./src/scripts/widgets/action-button.widget.ts");
+/* harmony import */ var _models__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models */ "./src/scripts/models/index.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+
+var ActionButtonGroupWidget = /** @class */ (function (_super) {
+    __extends(ActionButtonGroupWidget, _super);
+    function ActionButtonGroupWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.buttons = [];
+        return _this;
+    }
+    ActionButtonGroupWidget.prototype.getBaseCls = function () {
+        return _config_config__WEBPACK_IMPORTED_MODULE_1__.config.actionButtonGroupCls;
+    };
+    ActionButtonGroupWidget.prototype.getDisplayMode = function () {
+        return 'flex';
+    };
+    ActionButtonGroupWidget.prototype.addButton = function (options) {
+        var button = new _action_button_widget__WEBPACK_IMPORTED_MODULE_2__.ActionButtonWidget({
+            locale: options.locale,
+            actionButton: _models__WEBPACK_IMPORTED_MODULE_3__.ActionButton.fromJson(options),
+            renderTo: this.getBoxElem(),
+            app: options.app,
+        });
+        this.buttons.push(button);
+    };
+    ActionButtonGroupWidget.prototype.getButtons = function () {
+        return this.buttons;
+    };
+    ActionButtonGroupWidget.prototype.clearButtons = function () {
+        this.buttons.forEach(function (item) { return item.destroy(); });
+    };
+    ActionButtonGroupWidget.prototype.showNode = function () {
+        var boxElem = this.getBoxElem();
+        boxElem.style.display = this.getDisplayMode();
+        boxElem.style.maxHeight = '147px';
+        setTimeout(function () {
+            boxElem.style.overflowY = 'visible';
+            boxElem.style.maxHeight = 'none';
+        }, 500);
+        _super.prototype.showNode.call(this);
+    };
+    ActionButtonGroupWidget.prototype.hideNode = function () {
+        var boxElem = this.getBoxElem();
+        boxElem.style.overflowY = 'hidden';
+        setTimeout(function () { return (boxElem.style.maxHeight = '0'); }, 250);
+        setTimeout(function () { return (boxElem.style.display = 'none'); }, 500);
+        _super.prototype.hideNode.call(this);
+    };
+    return ActionButtonGroupWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/action-button.widget.ts"
+/*!*****************************************************!*\
+  !*** ./src/scripts/widgets/action-button.widget.ts ***!
+  \*****************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ActionButtonWidget: () => (/* binding */ ActionButtonWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/config */ "./src/scripts/config/config.ts");
+/* harmony import */ var _models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models */ "./src/scripts/models/index.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+var ActionButtonWidget = /** @class */ (function (_super) {
+    __extends(ActionButtonWidget, _super);
+    function ActionButtonWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.setLocale(_this.locale);
+        return _this;
+    }
+    ActionButtonWidget.prototype.bindEvents = function () {
+        var _this = this;
+        if (this.actionButton.getType() === _models__WEBPACK_IMPORTED_MODULE_2__.ActionButtonType.quickreply) {
+            this.getBoxElem().addEventListener('click', function () {
+                _this.app.triggerElement({
+                    successor: _this.actionButton.getSuccessor(),
+                    teaserButton: true,
+                });
+            });
+            this.getBoxElem().addEventListener('keydown', function (event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    _this.app.triggerElement({
+                        successor: _this.actionButton.getSuccessor(),
+                        teaserButton: true,
+                    });
+                }
+            });
+        }
+        if (this.actionButton.getType() === _models__WEBPACK_IMPORTED_MODULE_2__.ActionButtonType.callback) {
+            this.getBoxElem().addEventListener('click', function () {
+                var callback = _this.actionButton.getCallback();
+                callback();
+            });
+            this.getBoxElem().addEventListener('keydown', function (event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    var callback = _this.actionButton.getCallback();
+                    callback();
+                }
+            });
+        }
+    };
+    ActionButtonWidget.prototype.render = function () {
+        _super.prototype.render.call(this);
+        this.getBoxElem().tabIndex = 0;
+        this.getBoxElem().role = 'button';
+        this.bindEvents();
+    };
+    ActionButtonWidget.prototype.getBaseCls = function () {
+        return _config_config__WEBPACK_IMPORTED_MODULE_1__.config.actionButtonCls;
+    };
+    ActionButtonWidget.prototype.setLocale = function (locale) {
+        this.locale = locale;
+        var title = this.actionButton.getTitle(this.locale);
+        if (!title) {
+            title = 'Press me';
+        }
+        this.setContent(title);
+    };
+    return ActionButtonWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/chat-button.widget.ts"
+/*!***************************************************!*\
+  !*** ./src/scripts/widgets/chat-button.widget.ts ***!
+  \***************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ChatButtonWidget: () => (/* binding */ ChatButtonWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/config */ "./src/scripts/config/config.ts");
+/* harmony import */ var _consts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../consts */ "./src/scripts/consts.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+var ChatButtonWidget = /** @class */ (function (_super) {
+    __extends(ChatButtonWidget, _super);
+    function ChatButtonWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.isPressed = false;
+        _this.iconUrl = undefined;
+        return _this;
+    }
+    ChatButtonWidget.prototype.bindEvents = function () {
+        var _this = this;
+        this.getBoxElem().addEventListener('click', function () {
+            _this.toggle();
+        });
+        this.getBoxElem().addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                _this.toggle();
+            }
+        });
+    };
+    ChatButtonWidget.prototype.getBaseCls = function () {
+        return _config_config__WEBPACK_IMPORTED_MODULE_1__.config.buttonCls;
+    };
+    ChatButtonWidget.prototype.render = function () {
+        var boxElem = this.getBoxElem();
+        if (this.iconUrl === undefined) {
+            var iconContainer = document.createElement('div');
+            iconContainer.classList.add(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.buttonIconContainerCls);
+            iconContainer.innerHTML = _consts__WEBPACK_IMPORTED_MODULE_2__.iconSvg;
+            boxElem.appendChild(iconContainer);
+            boxElem.classList.add(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.buttonLogoCls);
+        }
+        else {
+            boxElem.style.backgroundColor = '';
+            boxElem.style.background = "url(".concat(this.iconUrl, ")");
+            boxElem.style.backgroundSize = 'contain';
+        }
+        boxElem.tabIndex = 0;
+        boxElem.role = 'button';
+        boxElem.ariaLabel = 'Open Chat';
+        this.bindEvents();
+        _super.prototype.render.call(this);
+    };
+    ChatButtonWidget.prototype.toggle = function (state, suppressEvent, timeout) {
+        var _this = this;
+        if (suppressEvent === void 0) { suppressEvent = false; }
+        if (timeout === void 0) { timeout = 100; }
+        var isPressed = state === undefined ? !this.isPressed : state;
+        if (isPressed === this.isPressed) {
+            return;
+        }
+        this.isPressed = isPressed;
+        if (isPressed) {
+            this.getBoxElem().classList.add(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.buttonHiddenCls);
+        }
+        else {
+            setTimeout(function () {
+                _this.getBoxElem().classList.remove(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.buttonHiddenCls);
+            }, timeout);
+        }
+        if (!suppressEvent) {
+            this.fire('toggle', {
+                isPressed: isPressed,
+            });
+        }
+    };
+    ChatButtonWidget.prototype.setContent = function (text) {
+        _super.prototype.setContent.call(this, text);
+        if (text) {
+            this.getBoxElem().classList.add(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.buttonWithTextCls);
+        }
+        else {
+            this.getBoxElem().classList.remove(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.buttonWithTextCls);
+        }
+    };
+    return ChatButtonWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/chatbox.widget.ts"
+/*!***********************************************!*\
+  !*** ./src/scripts/widgets/chatbox.widget.ts ***!
+  \***********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ChatboxWidget: () => (/* binding */ ChatboxWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/config */ "./src/scripts/config/config.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var ChatboxWidget = /** @class */ (function (_super) {
+    __extends(ChatboxWidget, _super);
+    function ChatboxWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.hasExtendedWidth = false;
+        _this.setState('loading');
+        if (options.hasExtendedWidth) {
+            _this.hasExtendedWidth = true;
+            _this.getBoxElem().classList.add(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.chatHasExtendedWidth);
+        }
+        _this.on('before:show', function () { return document.body.classList.add(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.chatIsOpen); });
+        _this.on('before:hide', function () {
+            return document.body.classList.remove(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.chatIsOpen);
+        });
+        return _this;
+    }
+    ChatboxWidget.prototype.showNode = function () {
+        var boxElem = this.getBoxElem();
+        boxElem.style.zIndex = '30';
+        boxElem.style.visibility = 'visible';
+        setTimeout(function () {
+            boxElem.style.opacity = '1';
+            boxElem.style.transform = 'translateY(0)';
+        });
+    };
+    ChatboxWidget.prototype.hideNode = function () {
+        var boxElem = this.getBoxElem();
+        boxElem.style.opacity = '0';
+        boxElem.style.transform = 'translateY(10px)';
+        setTimeout(function () {
+            boxElem.style.zIndex = '-1';
+            boxElem.style.visibility = 'hidden';
+        }, 100);
+    };
+    ChatboxWidget.prototype.getBaseCls = function () {
+        return _config_config__WEBPACK_IMPORTED_MODULE_1__.config.chatCls;
+    };
+    ChatboxWidget.prototype.setState = function (state) {
+        if (state === 'loading') {
+            this.getBoxElem().classList.add(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.chatLoadingCls);
+        }
+        if (state === 'ready') {
+            this.getBoxElem().classList.remove(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.chatLoadingCls);
+        }
+    };
+    ChatboxWidget.prototype.renderLoader = function () {
+        var loaderAnimation = '<svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><g transform="rotate(0 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#6a6a6a"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(30 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#6a6a6a"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(60 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#6a6a6a"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(90 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#6a6a6a"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(120 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#6a6a6a"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(150 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#6a6a6a"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(180 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#6a6a6a"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(210 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#6a6a6a"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(240 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#6a6a6a"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(270 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#6a6a6a"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(300 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#6a6a6a"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(330 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#6a6a6a"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate></rect></g></svg>';
+        var loader = document.createElement('div');
+        loader.classList.add(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.chatLoaderCls);
+        var loaderImage = document.createElement('div');
+        loaderImage.classList.add(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.chatLoaderImageCls);
+        loaderImage.innerHTML = loaderAnimation;
+        loader.appendChild(loaderImage);
+        return loader;
+    };
+    ChatboxWidget.prototype.render = function (renderTo) {
+        var boxElem = this.getBoxElem();
+        boxElem.classList.add(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.chatCls);
+        boxElem.appendChild(this.renderLoader());
+        _super.prototype.render.call(this, renderTo);
+    };
+    return ChatboxWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/content-wrapper.widget.ts"
+/*!*******************************************************!*\
+  !*** ./src/scripts/widgets/content-wrapper.widget.ts ***!
+  \*******************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ContentWrapperWidget: () => (/* binding */ ContentWrapperWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/config */ "./src/scripts/config/config.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var ContentWrapperWidget = /** @class */ (function (_super) {
+    __extends(ContentWrapperWidget, _super);
+    function ContentWrapperWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.visible = false;
+        return _this;
+    }
+    ContentWrapperWidget.prototype.getBaseCls = function () {
+        return _config_config__WEBPACK_IMPORTED_MODULE_1__.config.contentWrapperCls;
+    };
+    return ContentWrapperWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/footer.widget.ts"
+/*!**********************************************!*\
+  !*** ./src/scripts/widgets/footer.widget.ts ***!
+  \**********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   FooterWidget: () => (/* binding */ FooterWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+var config = {
+    baseCls: 'ds-footer',
+};
+var FooterWidget = /** @class */ (function (_super) {
+    __extends(FooterWidget, _super);
+    function FooterWidget(options) {
+        return _super.call(this, options) || this;
+    }
+    FooterWidget.prototype.getBaseCls = function () {
+        return config.baseCls;
+    };
+    return FooterWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/header/header-close-button.widget.ts"
+/*!******************************************************************!*\
+  !*** ./src/scripts/widgets/header/header-close-button.widget.ts ***!
+  \******************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   HeaderCloseButtonWidget: () => (/* binding */ HeaderCloseButtonWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/base-widget */ "./src/scripts/core/base-widget.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../config/config */ "./src/scripts/config/config.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var HeaderCloseButtonWidget = /** @class */ (function (_super) {
+    __extends(HeaderCloseButtonWidget, _super);
+    function HeaderCloseButtonWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.leftCloseButton = options.leftCloseButton;
+        return _this;
+    }
+    HeaderCloseButtonWidget.prototype.bindEvents = function () {
+        var _this = this;
+        this.getBoxElem().addEventListener('click', function () {
+            _this.fire('click');
+        });
+        this.getBoxElem().addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                _this.fire('click');
+            }
+        });
+    };
+    HeaderCloseButtonWidget.prototype.render = function () {
+        _super.prototype.render.call(this);
+        this.getBoxElem().tabIndex = 0;
+        this.getBoxElem().ariaLabel = 'Close Chat';
+        this.getBoxElem().role = 'button';
+        this.bindEvents();
+    };
+    HeaderCloseButtonWidget.prototype.getBaseCls = function () {
+        var cls = _config_config__WEBPACK_IMPORTED_MODULE_1__.config.headerCloseButtonCls;
+        if (this.leftCloseButton) {
+            cls += " ".concat(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.headerCloseButtonLeftCls);
+        }
+        return cls;
+    };
+    return HeaderCloseButtonWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/header/header.widget.ts"
+/*!*****************************************************!*\
+  !*** ./src/scripts/widgets/header/header.widget.ts ***!
+  \*****************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   HeaderWidget: () => (/* binding */ HeaderWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/base-widget */ "./src/scripts/core/base-widget.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../config/config */ "./src/scripts/config/config.ts");
+/* harmony import */ var _header_close_button_widget__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header-close-button.widget */ "./src/scripts/widgets/header/header-close-button.widget.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+var HeaderWidget = /** @class */ (function (_super) {
+    __extends(HeaderWidget, _super);
+    function HeaderWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.leftCloseButton = options.leftCloseButton;
+        return _this;
+    }
+    HeaderWidget.prototype.getBaseCls = function () {
+        return _config_config__WEBPACK_IMPORTED_MODULE_1__.config.headerCls;
+    };
+    HeaderWidget.prototype.getDisplayMode = function () {
+        return 'flex';
+    };
+    HeaderWidget.prototype.renderCloseButton = function () {
+        this.closeButton = new _header_close_button_widget__WEBPACK_IMPORTED_MODULE_2__.HeaderCloseButtonWidget({
+            renderTo: this.getBoxElem(),
+            leftCloseButton: this.leftCloseButton,
+        });
+    };
+    HeaderWidget.prototype.getCloseButton = function () {
+        return this.closeButton;
+    };
+    HeaderWidget.prototype.render = function (renderTo) {
+        _super.prototype.render.call(this, renderTo);
+        this.renderCloseButton();
+    };
+    return HeaderWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/iframe-box.widget.ts"
+/*!**************************************************!*\
+  !*** ./src/scripts/widgets/iframe-box.widget.ts ***!
+  \**************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   IframeBoxWidget: () => (/* binding */ IframeBoxWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+var config = {
+    baseCls: 'ds-iframe-box',
+    crossCls: 'ds-iframe-box__cross',
+};
+var IframeBoxWidget = /** @class */ (function (_super) {
+    __extends(IframeBoxWidget, _super);
+    function IframeBoxWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.loaded = false;
+        return _this;
+    }
+    IframeBoxWidget.prototype.hideNode = function () {
+        _super.prototype.hideNode.call(this);
+    };
+    IframeBoxWidget.prototype.getBaseCls = function () {
+        return config.baseCls;
+    };
+    IframeBoxWidget.prototype.isLoaded = function () {
+        return this.loaded;
+    };
+    IframeBoxWidget.prototype.load = function (url) {
+        if (!this.iframe) {
+            this.iframe = document.createElement('iframe');
+            this.iframe.src = url;
+            this.iframe.scrolling = 'yes';
+            this.iframe.frameBorder = '0';
+            this.iframe.sandbox.add('allow-same-origin');
+            this.iframe.sandbox.add('allow-scripts');
+            this.iframe.sandbox.add('allow-forms');
+            this.iframe.sandbox.add('allow-modals');
+            this.iframe.sandbox.add('allow-popups');
+            this.iframe.sandbox.add('allow-popups-to-escape-sandbox');
+            this.iframe.sandbox.add('allow-top-navigation-by-user-activation');
+            this.iframe.allow = 'clipboard-write';
+            this.getBoxElem().appendChild(this.iframe);
+        }
+        else {
+            this.iframe.src = url;
+        }
+        return this;
+    };
+    IframeBoxWidget.prototype.setContent = function () {
+        throw new Error('Method is not allowed for an iframe');
+    };
+    IframeBoxWidget.prototype.render = function () {
+        this.crossElem = this.createNode();
+        this.crossElem.classList.add(config.crossCls);
+        this.crossElem.tabIndex = 0;
+        this.crossElem.ariaLabel = 'Close Chat';
+        this.crossElem.role = 'button';
+        this.bindEvents();
+        this.getBoxElem().appendChild(this.crossElem);
+        _super.prototype.render.call(this);
+    };
+    IframeBoxWidget.prototype.close = function () {
+        var _a, _b;
+        (_b = (_a = this.iframe) === null || _a === void 0 ? void 0 : _a.parentNode) === null || _b === void 0 ? void 0 : _b.removeChild(this.iframe);
+        this.iframe = null;
+        this.hide();
+    };
+    IframeBoxWidget.prototype.bindEvents = function () {
+        var _this = this;
+        this.crossElem.addEventListener('click', function (event) {
+            event.stopPropagation();
+            _this.close();
+        });
+        this.crossElem.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                event.stopPropagation();
+                _this.close();
+            }
+        });
+    };
+    IframeBoxWidget.prototype.setWidth = function (width) {
+        this.getBoxElem().style.width = "".concat(width, "px");
+    };
+    return IframeBoxWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/iframe.widget.ts"
+/*!**********************************************!*\
+  !*** ./src/scripts/widgets/iframe.widget.ts ***!
+  \**********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   IframeWidget: () => (/* binding */ IframeWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/config */ "./src/scripts/config/config.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var IframeWidget = /** @class */ (function (_super) {
+    __extends(IframeWidget, _super);
+    function IframeWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.loaded = false;
+        _this.initialElement = {
+            successor: null,
+            suppress: false,
+        };
+        _this.initialElement = options.initialElement;
+        _this.channel = options.channel || 'pwa-embed';
+        return _this;
+    }
+    IframeWidget.prototype.getBaseCls = function () {
+        return _config_config__WEBPACK_IMPORTED_MODULE_1__.config.iframeCls;
+    };
+    IframeWidget.prototype.getBoxElem = function () {
+        return _super.prototype.getBoxElem.call(this);
+    };
+    IframeWidget.prototype.setLoaded = function (value) {
+        this.loaded = value;
+    };
+    IframeWidget.prototype.isLoaded = function () {
+        return this.loaded;
+    };
+    IframeWidget.prototype.createNode = function () {
+        var node = document.createElement('iframe');
+        node.sandbox.add('allow-downloads');
+        node.sandbox.add('allow-forms');
+        node.sandbox.add('allow-modals');
+        node.sandbox.add('allow-pointer-lock');
+        node.sandbox.add('allow-popups');
+        node.sandbox.add('allow-popups-to-escape-sandbox');
+        node.sandbox.add('allow-presentation');
+        node.sandbox.add('allow-same-origin');
+        node.sandbox.add('allow-scripts');
+        node.sandbox.add('allow-storage-access-by-user-activation');
+        node.sandbox.add('allow-top-navigation');
+        node.sandbox.add('allow-top-navigation-by-user-activation');
+        node.sandbox.add('allow-top-navigation-to-custom-protocols');
+        return node;
+    };
+    IframeWidget.prototype.getViewportWidth = function () {
+        return Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    };
+    IframeWidget.prototype.buildUrl = function () {
+        var iframeUrl = "".concat(this.host, "?clid=").concat(this.id, "&cid=").concat(this.customerId);
+        if (this.initialElement.suppress) {
+            iframeUrl += '&init=suppress';
+        }
+        else if (this.initialElement.successor) {
+            iframeUrl += "&init=".concat(this.initialElement.successor);
+        }
+        if (this.locale) {
+            iframeUrl += "&lg=".concat(this.locale);
+        }
+        iframeUrl += "&source=".concat(this.channel);
+        iframeUrl += "&viewport=".concat(this.getViewportWidth());
+        iframeUrl += "&curl=".concat(location.origin + location.pathname);
+        return iframeUrl;
+    };
+    IframeWidget.prototype.load = function (customerId) {
+        this.customerId = customerId;
+        if (this.isRendered()) {
+            this.getBoxElem().src = this.buildUrl();
+        }
+    };
+    IframeWidget.prototype.setContent = function () {
+        throw new Error('Method is not allowed for an iframe');
+    };
+    IframeWidget.prototype.getInitialElement = function () {
+        return this.initialElement;
+    };
+    IframeWidget.prototype.setInitialElement = function (initialElement) {
+        this.initialElement = initialElement;
+    };
+    return IframeWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/index.ts"
+/*!**************************************!*\
+  !*** ./src/scripts/widgets/index.ts ***!
+  \**************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ActionButtonGroupWidget: () => (/* reexport safe */ _action_button_group_widget__WEBPACK_IMPORTED_MODULE_8__.ActionButtonGroupWidget),
+/* harmony export */   ActionButtonWidget: () => (/* reexport safe */ _action_button_widget__WEBPACK_IMPORTED_MODULE_7__.ActionButtonWidget),
+/* harmony export */   ChatButtonWidget: () => (/* reexport safe */ _chat_button_widget__WEBPACK_IMPORTED_MODULE_2__.ChatButtonWidget),
+/* harmony export */   ChatboxWidget: () => (/* reexport safe */ _chatbox_widget__WEBPACK_IMPORTED_MODULE_1__.ChatboxWidget),
+/* harmony export */   ContentWrapperWidget: () => (/* reexport safe */ _content_wrapper_widget__WEBPACK_IMPORTED_MODULE_6__.ContentWrapperWidget),
+/* harmony export */   FooterWidget: () => (/* reexport safe */ _footer_widget__WEBPACK_IMPORTED_MODULE_13__.FooterWidget),
+/* harmony export */   HeaderWidget: () => (/* reexport safe */ _header_header_widget__WEBPACK_IMPORTED_MODULE_12__.HeaderWidget),
+/* harmony export */   IframeBoxWidget: () => (/* reexport safe */ _iframe_box_widget__WEBPACK_IMPORTED_MODULE_11__.IframeBoxWidget),
+/* harmony export */   IframeWidget: () => (/* reexport safe */ _iframe_widget__WEBPACK_IMPORTED_MODULE_3__.IframeWidget),
+/* harmony export */   TeaserWidget: () => (/* reexport safe */ _teaser_widget__WEBPACK_IMPORTED_MODULE_4__.TeaserWidget),
+/* harmony export */   UnreadWidget: () => (/* reexport safe */ _unread_widget__WEBPACK_IMPORTED_MODULE_5__.UnreadWidget),
+/* harmony export */   WhatsappButtonWidget: () => (/* reexport safe */ _whatsapp_button_widget__WEBPACK_IMPORTED_MODULE_9__.WhatsappButtonWidget),
+/* harmony export */   WhatsappWindowWidget: () => (/* reexport safe */ _whatsapp_window_widget__WEBPACK_IMPORTED_MODULE_10__.WhatsappWindowWidget),
+/* harmony export */   WrapperWidget: () => (/* reexport safe */ _wrapper_widget__WEBPACK_IMPORTED_MODULE_0__.WrapperWidget)
+/* harmony export */ });
+/* harmony import */ var _wrapper_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./wrapper.widget */ "./src/scripts/widgets/wrapper.widget.ts");
+/* harmony import */ var _chatbox_widget__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./chatbox.widget */ "./src/scripts/widgets/chatbox.widget.ts");
+/* harmony import */ var _chat_button_widget__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./chat-button.widget */ "./src/scripts/widgets/chat-button.widget.ts");
+/* harmony import */ var _iframe_widget__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./iframe.widget */ "./src/scripts/widgets/iframe.widget.ts");
+/* harmony import */ var _teaser_widget__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./teaser.widget */ "./src/scripts/widgets/teaser.widget.ts");
+/* harmony import */ var _unread_widget__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./unread.widget */ "./src/scripts/widgets/unread.widget.ts");
+/* harmony import */ var _content_wrapper_widget__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./content-wrapper.widget */ "./src/scripts/widgets/content-wrapper.widget.ts");
+/* harmony import */ var _action_button_widget__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./action-button.widget */ "./src/scripts/widgets/action-button.widget.ts");
+/* harmony import */ var _action_button_group_widget__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./action-button-group.widget */ "./src/scripts/widgets/action-button-group.widget.ts");
+/* harmony import */ var _whatsapp_button_widget__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./whatsapp-button.widget */ "./src/scripts/widgets/whatsapp-button.widget.ts");
+/* harmony import */ var _whatsapp_window_widget__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./whatsapp-window.widget */ "./src/scripts/widgets/whatsapp-window.widget.ts");
+/* harmony import */ var _iframe_box_widget__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./iframe-box.widget */ "./src/scripts/widgets/iframe-box.widget.ts");
+/* harmony import */ var _header_header_widget__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./header/header.widget */ "./src/scripts/widgets/header/header.widget.ts");
+/* harmony import */ var _footer_widget__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./footer.widget */ "./src/scripts/widgets/footer.widget.ts");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/teaser.widget.ts"
+/*!**********************************************!*\
+  !*** ./src/scripts/widgets/teaser.widget.ts ***!
+  \**********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   TeaserWidget: () => (/* binding */ TeaserWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/config */ "./src/scripts/config/config.ts");
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../enums */ "./src/scripts/enums.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+var TeaserWidget = /** @class */ (function (_super) {
+    __extends(TeaserWidget, _super);
+    function TeaserWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.custidStoreMode = options.custidStoreMode;
+        return _this;
+    }
+    TeaserWidget.prototype.getBaseCls = function () {
+        return _config_config__WEBPACK_IMPORTED_MODULE_1__.config.teaserCls;
+    };
+    TeaserWidget.prototype.render = function () {
+        this.crossElem = this.createNode();
+        this.crossElem.classList.add(_config_config__WEBPACK_IMPORTED_MODULE_1__.config.teaserCrossCls);
+        this.crossElem.tabIndex = 0;
+        this.crossElem.ariaLabel = 'Close Chat Teaser';
+        this.crossElem.role = 'button';
+        this.getBoxElem().role = 'button';
+        this.bindEvents();
+        this.getBoxElem().appendChild(this.crossElem);
+        _super.prototype.render.call(this);
+    };
+    TeaserWidget.prototype.checkTimes = function () {
+        if (this.hideTeaserAfterTimes === undefined) {
+            return true;
+        }
+        var timesCounter = 0;
+        if (this.custidStoreMode === _enums__WEBPACK_IMPORTED_MODULE_2__.CustidStoreMode.cookie) {
+            var storedTimesCounter = null;
+            try {
+                storedTimesCounter = sessionStorage.getItem('ds-times-counter');
+            }
+            catch (e) {
+                console.log('Session storage blocked.');
+            }
+            if (storedTimesCounter !== null) {
+                timesCounter = parseInt(storedTimesCounter, 10);
+            }
+        }
+        timesCounter += 1;
+        if (timesCounter > this.hideTeaserAfterTimes) {
+            return false;
+        }
+        if (this.custidStoreMode === _enums__WEBPACK_IMPORTED_MODULE_2__.CustidStoreMode.cookie) {
+            try {
+                sessionStorage.setItem('ds-times-counter', timesCounter.toString());
+            }
+            catch (e) {
+                console.log('Session storage blocked.');
+            }
+        }
+        return true;
+    };
+    TeaserWidget.prototype.show = function (options) {
+        if (options === void 0) { options = { force: false }; }
+        if (options.force) {
+            _super.prototype.show.call(this);
+            return;
+        }
+        if (!this.checkTimes()) {
+            this.hideNode();
+            return;
+        }
+        var teaserDisplay = null;
+        if (this.custidStoreMode === _enums__WEBPACK_IMPORTED_MODULE_2__.CustidStoreMode.cookie) {
+            try {
+                teaserDisplay = sessionStorage.getItem('ds-teaser-display');
+            }
+            catch (e) {
+                console.log('Session storage blocked.');
+            }
+        }
+        if (this.showTeaserOnce && teaserDisplay !== null) {
+            return;
+        }
+        _super.prototype.show.call(this);
+        if (this.custidStoreMode === _enums__WEBPACK_IMPORTED_MODULE_2__.CustidStoreMode.cookie) {
+            try {
+                sessionStorage.setItem('ds-teaser-display', 'true');
+            }
+            catch (e) {
+                console.log('Session storage blocked.');
+            }
+        }
+    };
+    TeaserWidget.prototype.bindEvents = function () {
+        var _this = this;
+        this.crossElem.addEventListener('click', function (event) {
+            event.stopPropagation();
+            _this.hide();
+        });
+        this.crossElem.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                event.stopPropagation();
+                _this.hide();
+            }
+        });
+        this.getBoxElem().addEventListener('click', function () { return _this.fire('click'); });
+        this.getBoxElem().addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                _this.fire('click');
+            }
+        });
+    };
+    return TeaserWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/unread.widget.ts"
+/*!**********************************************!*\
+  !*** ./src/scripts/widgets/unread.widget.ts ***!
+  \**********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   UnreadWidget: () => (/* binding */ UnreadWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/config */ "./src/scripts/config/config.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var UnreadWidget = /** @class */ (function (_super) {
+    __extends(UnreadWidget, _super);
+    function UnreadWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.unreadCounter = 0;
+        if (options.unreadCounter) {
+            _this.increase(options.unreadCounter);
+        }
+        return _this;
+    }
+    UnreadWidget.prototype.getBaseCls = function () {
+        return _config_config__WEBPACK_IMPORTED_MODULE_1__.config.unreadCls;
+    };
+    UnreadWidget.prototype.setCounter = function (amount) {
+        if (amount < 1) {
+            this.reset();
+        }
+        else {
+            this.unreadCounter = amount;
+            this.setContent(this.unreadCounter);
+            if (!this.isVisible()) {
+                this.show();
+            }
+        }
+    };
+    UnreadWidget.prototype.increase = function (amount) {
+        if (amount === void 0) { amount = 1; }
+        if (amount < 1) {
+            return;
+        }
+        this.unreadCounter += amount;
+        this.setContent(this.unreadCounter);
+        if (!this.isVisible()) {
+            this.show();
+        }
+    };
+    UnreadWidget.prototype.reset = function () {
+        var _this = this;
+        this.unreadCounter = 0;
+        if (this.isVisible()) {
+            this.hide();
+            setTimeout(function () { return _this.setContent(_this.unreadCounter); }, this.animationDelay);
+        }
+    };
+    return UnreadWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/whatsapp-button.widget.ts"
+/*!*******************************************************!*\
+  !*** ./src/scripts/widgets/whatsapp-button.widget.ts ***!
+  \*******************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WhatsappButtonWidget: () => (/* binding */ WhatsappButtonWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+var config = {
+    baseCls: 'ds-whatsapp-button',
+    activeCls: 'ds-whatsapp-button--active',
+    bwCls: 'ds-whatsapp-button--bw',
+    slideCls: 'ds-whatsapp-button--slide',
+};
+var WhatsappButtonWidget = /** @class */ (function (_super) {
+    __extends(WhatsappButtonWidget, _super);
+    function WhatsappButtonWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.isPressed = false;
+        _this.blackWhiteStyle = false;
+        _this.slideWaButton = false;
+        return _this;
+    }
+    WhatsappButtonWidget.prototype.bindEvents = function () {
+        var _this = this;
+        this.getBoxElem().addEventListener('click', function () {
+            _this.toggle();
+        });
+    };
+    WhatsappButtonWidget.prototype.render = function () {
+        if (this.blackWhiteStyle) {
+            var boxElem = this.getBoxElem();
+            boxElem.classList.add(config.bwCls);
+        }
+        if (this.slideWaButton) {
+            var boxElem = this.getBoxElem();
+            boxElem.classList.add(config.slideCls);
+        }
+        _super.prototype.render.call(this);
+        this.bindEvents();
+    };
+    WhatsappButtonWidget.prototype.toggle = function (state, suppressEvent) {
+        if (suppressEvent === void 0) { suppressEvent = false; }
+        var isPressed = state === undefined ? !this.isPressed : !!state;
+        if (isPressed === this.isPressed) {
+            return;
+        }
+        this.isPressed = isPressed;
+        if (isPressed) {
+            this.getBoxElem().classList.add(config.activeCls);
+        }
+        else {
+            this.getBoxElem().classList.remove(config.activeCls);
+        }
+        if (!suppressEvent) {
+            this.fire('toggle', {
+                isPressed: isPressed,
+            });
+        }
+    };
+    WhatsappButtonWidget.prototype.getBaseCls = function () {
+        return config.baseCls;
+    };
+    return WhatsappButtonWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/whatsapp-window.widget.ts"
+/*!*******************************************************!*\
+  !*** ./src/scripts/widgets/whatsapp-window.widget.ts ***!
+  \*******************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WhatsappWindowWidget: () => (/* binding */ WhatsappWindowWidget)
+/* harmony export */ });
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+/* harmony import */ var _services__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services */ "./src/scripts/services/index.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var config = {
+    baseCls: 'ds-whatsapp-window',
+    hideLoadingCls: 'ds-whatsapp-window--hide-loading',
+    loadedCls: 'ds-whatsapp-window--loaded',
+    titleCls: 'ds-whatsapp-window__title',
+    textCls: 'ds-whatsapp-window__text',
+    textLinkCls: 'ds-whatsapp-window__text-link',
+    textLinkMobileCls: 'ds-whatsapp-window__text-link-mobile',
+    qr: 'ds-whatsapp-window__qr',
+    linkCls: 'ds-whatsapp-window__link',
+    linkTestCls: 'ds-whatsapp-window__link-text',
+};
+var texts = {
+    en: {
+        title: 'Use WhatsApp',
+        description: 'Scan the QR code with your phone',
+        linkText: 'or click the link below',
+        linkMobileText: 'Click the button below to connect WhatsApp',
+        link: 'Open WhatsApp',
+    },
+    de: {
+        title: 'WhatsApp',
+        description: 'QR-Code mit dem Smartphone scannen',
+        linkText: 'auf dem Computer auch mit diesem Link',
+        linkMobileText: 'Klicke den Button um WhatsApp zu öffnen',
+        link: 'WhatsApp öffnen',
+    },
+};
+var getText = function (locale, key) {
+    var lg = locale;
+    if (lg !== 'de' && lg !== 'en') {
+        lg = 'en';
+    }
+    return texts[lg][key];
+};
+var WhatsappWindowWidget = /** @class */ (function (_super) {
+    __extends(WhatsappWindowWidget, _super);
+    function WhatsappWindowWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.isLoaded = false;
+        _this.locale = 'en';
+        _this.clientId = options.clientId;
+        if (options.locale) {
+            _this.locale = options.locale;
+        }
+        _this.on('before:show', function () {
+            _this.loadQR();
+        });
+        return _this;
+    }
+    WhatsappWindowWidget.prototype.loadQR = function () {
+        var _this = this;
+        if (!this.isLoaded) {
+            this.isLoaded = true;
+            _services__WEBPACK_IMPORTED_MODULE_1__.ApiService.getWhatsappLink(this.clientId, _services__WEBPACK_IMPORTED_MODULE_1__.UserService.getCustomerId()).then(function (response) {
+                _this.waLink = response.waLink;
+                _this.waSvg = response.waSvg;
+                _this.renderContent();
+                _this.addCls(config.hideLoadingCls);
+                setTimeout(function () {
+                    _this.addCls(config.loadedCls);
+                    _this.removeCls(config.hideLoadingCls);
+                }, 250);
+            });
+        }
+    };
+    WhatsappWindowWidget.prototype.renderContent = function () {
+        var title = "<div class=\"".concat(config.titleCls, "\">").concat(getText(this.locale, 'title'), "</div>");
+        var description = "<div class=\"".concat(config.textCls, "\">").concat(getText(this.locale, 'description'), "</div>");
+        var qr = "<div class=\"".concat(config.qr, "\">").concat(this.waSvg, "</div>");
+        var linkText = "<div class=\"".concat(config.textLinkCls, "\">").concat(getText(this.locale, 'linkText'), "</div>");
+        var linkMobileText = "<div class=\"".concat(config.textLinkMobileCls, "\">").concat(getText(this.locale, 'linkMobileText'), "</div>");
+        var link = "<a class=\"".concat(config.linkCls, "\" href=\"").concat(this.waLink, "\" target=\"_blank\">\n      <span class=\"").concat(config.linkTestCls, "\">").concat(getText(this.locale, 'link'), "</span>\n    </a>");
+        this.setContent(title + description + qr + linkText + linkMobileText + link);
+    };
+    WhatsappWindowWidget.prototype.getBaseCls = function () {
+        return config.baseCls;
+    };
+    WhatsappWindowWidget.prototype.setLocale = function (locale) {
+        this.locale = locale;
+        if (this.isLoaded) {
+            this.renderContent();
+        }
+    };
+    return WhatsappWindowWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_0__.BaseWidget));
+
+
+
+/***/ },
+
+/***/ "./src/scripts/widgets/wrapper.widget.ts"
+/*!***********************************************!*\
+  !*** ./src/scripts/widgets/wrapper.widget.ts ***!
+  \***********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WrapperWidget: () => (/* binding */ WrapperWidget)
+/* harmony export */ });
+/* harmony import */ var _core_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/app */ "./src/scripts/core/app.ts");
+/* harmony import */ var _core_base_widget__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/base-widget */ "./src/scripts/core/base-widget.ts");
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config/config */ "./src/scripts/config/config.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+var WrapperWidget = /** @class */ (function (_super) {
+    __extends(WrapperWidget, _super);
+    function WrapperWidget(options) {
+        var _this = _super.call(this, options) || this;
+        _this.direction = 'ltr';
+        return _this;
+    }
+    WrapperWidget.prototype.getBaseCls = function () {
+        return _config_config__WEBPACK_IMPORTED_MODULE_2__.config.wrapperCls;
+    };
+    WrapperWidget.prototype.setPosition = function (position) {
+        this.position = position;
+        var boxElem = this.getBoxElem();
+        boxElem.classList.remove(_config_config__WEBPACK_IMPORTED_MODULE_2__.config.wrapperPositionLeftCls);
+        boxElem.classList.remove(_config_config__WEBPACK_IMPORTED_MODULE_2__.config.wrapperPositionRightCls);
+        boxElem.classList.add(position === _core_app__WEBPACK_IMPORTED_MODULE_0__.ChatPosition.left
+            ? _config_config__WEBPACK_IMPORTED_MODULE_2__.config.wrapperPositionLeftCls
+            : _config_config__WEBPACK_IMPORTED_MODULE_2__.config.wrapperPositionRightCls);
+    };
+    WrapperWidget.prototype.setTheme = function (theme) {
+        if (!(theme in _core_app__WEBPACK_IMPORTED_MODULE_0__.AppTheme)) {
+            return;
+        }
+        this.theme = theme;
+        var boxElem = this.getBoxElem();
+        var themeCls = _config_config__WEBPACK_IMPORTED_MODULE_2__.config["theme".concat(theme.charAt(0).toUpperCase() + theme.slice(1))];
+        boxElem.classList.remove(_config_config__WEBPACK_IMPORTED_MODULE_2__.config.themeRound);
+        boxElem.classList.remove(_config_config__WEBPACK_IMPORTED_MODULE_2__.config.themeTile);
+        boxElem.classList.add(themeCls);
+    };
+    WrapperWidget.prototype.render = function () {
+        this.setPosition(this.position);
+        this.setTheme(this.theme);
+        if (this.direction === 'rtl') {
+            this.getBoxElem().classList.add(_config_config__WEBPACK_IMPORTED_MODULE_2__.config.wrapperDirectionRtlCls);
+        }
+        if (this.baseCustomCls) {
+            this.getBoxElem().classList.add(this.baseCustomCls);
+        }
+        _super.prototype.render.call(this);
+    };
+    return WrapperWidget;
+}(_core_base_widget__WEBPACK_IMPORTED_MODULE_1__.BaseWidget));
+
+
+
+/***/ }
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	const __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		const cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		const module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		if (!(moduleId in __webpack_modules__)) {
+/******/ 			delete __webpack_module_cache__[moduleId];
+/******/ 			const e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
+/******/ 		}
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	// define getter/value functions for harmony exports
+/******/ 	__webpack_require__.d = (exports, definition) => {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 			}
+/******/ 		}
+/******/ 	};
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop));
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = (exports) => {
+/******/ 		Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/ 	
+/************************************************************************/
+let __webpack_exports__ = {};
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+(() => {
+/*!******************************!*\
+  !*** ./src/scripts/index.ts ***!
+  \******************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   instance: () => (/* binding */ instance)
+/* harmony export */ });
+/* harmony import */ var _core_facade__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./core/facade */ "./src/scripts/core/facade.ts");
+/* harmony import */ var _core_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./core/app */ "./src/scripts/core/app.ts");
+
+
+var facade = null;
+var instance = function (options) {
+    if (facade && !facade.isDestroyed()) {
+        return facade;
+    }
+    facade = (0,_core_facade__WEBPACK_IMPORTED_MODULE_0__.createFacade)(new _core_app__WEBPACK_IMPORTED_MODULE_1__.App(options));
+    return facade;
+};
+
+
+})();
+
+window.Dialogshift = __webpack_exports__;
+/******/ })()
+;

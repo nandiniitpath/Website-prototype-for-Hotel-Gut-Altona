@@ -1,0 +1,36 @@
+;(function(){function styleLoaded(href){for(const s of document.styleSheets){if(s.href===href){return true;}}
+return false;}
+function loadStyle(href){if(styleLoaded(href)){return;}
+var style=document.createElement('link')
+style.href=href
+style.type='text/css'
+style.rel='stylesheet'
+document.getElementsByTagName('head')[0].appendChild(style)}
+function getScript(src){for(const s of document.scripts){if(s.src===src){return s;}}
+return null;}
+function loadScript(src,callback){var oldScript=getScript(src);if(oldScript===null){var script=document.createElement('script')
+var isLoaded=false
+script.async=true
+script.src=src
+script.onload=script.onreadystatechange=function(){if(!isLoaded&&(!this.readyState||this.readyState=='complete')){callback()}}
+document.getElementsByTagName('head')[0].appendChild(script)}else if(window.Dialogshift!==undefined){callback();}else{oldScript.onload=oldScript.onreadystatechange=function(){if(!this.readyState||this.readyState=='complete'){callback()}}}}
+function loadSDK(callback){var sdkJsCdn='https://cdn.dialogshift.com/sdk/latest/dialogshift-webchat-sdk.umd.js'
+var sdkCssCdn='https://cdn.dialogshift.com/sdk/latest/dialogshift-webchat-sdk.min.css'
+loadScript(sdkJsCdn,callback)
+loadStyle(sdkCssCdn)}
+function parseLocale(strategy,supported,default_locale){switch(strategy){case"default":return parseLocaleHtml(supported,default_locale);case"path":return parseLocalePath(supported,default_locale);case"parameter":return parseLocaleParameter(supported,default_locale);default:return default_locale;}}function parseLocaleHtml(supported,default_locale){var locale=document.documentElement.lang.substring(0,2)
+if(supported.indexOf(locale)!==-1){return locale}
+return default_locale}var snippet_data=JSON.parse('{"gut-altona.de": {"language_strategy": "default", "clients": [{"path": ["*"], "clientid": "pro1ff9", "languages": ["de", "en"], "default_language": "de"}], "channel": "pwa-embed"}}');function init(locale,client,config,channel){var params={id:client.clientid,locale:parseLocale(locale,client.languages,client.default_language),context:{channel:channel},};if(config!==null&&config!==undefined){for(const key of Object.keys(config)){params[key]=config[key];}}
+return new Dialogshift.instance(params);}
+function includesPath(paths){for(const path of paths){if(window.location.pathname.includes(path)||window.location.search.includes(path)){return true;}}
+return false;}
+function checkChannelOverride(client){if(Object.keys(client).includes("channel_override")){for(const ovr of client["channel_override"]){if(includesPath([ovr.path])){return ovr;}}}
+return null;}
+function checkDisableOverride(client){if(Object.keys(client).includes("disable_override")){for(const dis of client["disable_override"]){return includesPath([dis.path]);}}
+return false;}
+loadSDK(function(){var channel=null;var host=window.location.host;var wildcard=null;if(host.startsWith("www.")){host=host.substring(4);}
+if(Object.keys(snippet_data).length>1&&!Object.keys(snippet_data).includes(host)){return;}
+if(Object.keys(snippet_data).length===1){host=Object.keys(snippet_data)[0];}
+channel=snippet_data[host].channel;for(const client of snippet_data[host].clients){if(client.path.includes("*")&&!checkDisableOverride(client)){wildcard=client;}else if(includesPath(client.path)&&!checkDisableOverride(client)){var channel_override=checkChannelOverride(client);var lang=snippet_data[host].language_strategy;if(channel_override!==null&&Object.keys(channel_override).includes("lang")){lang=channel_override.lang;}
+var instance=init(lang,client,snippet_data[host].custom_config,channel_override===null?snippet_data[host].channel:channel_override.channel);return;}}
+if(wildcard!==null){var channel_override=checkChannelOverride(wildcard);var instance=init(snippet_data[host].language_strategy,wildcard,snippet_data[host].custom_config,channel_override===null?snippet_data[host].channel:channel_override.channel);}})})()

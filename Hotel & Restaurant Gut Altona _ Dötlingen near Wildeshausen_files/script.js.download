@@ -1,0 +1,82 @@
+(function () {
+    'use strict';
+
+    function initSliders() {
+        if (typeof Swiper === 'undefined') {
+            return;
+        }
+
+        var sliders = document.querySelectorAll('.pcs-swiper');
+
+        sliders.forEach(function (el) {
+            if (el.dataset.pcsInit === '1') {
+                return; // bereits initialisiert
+            }
+            el.dataset.pcsInit = '1';
+
+            var cfg = {};
+            try {
+                cfg = JSON.parse(el.getAttribute('data-pcs')) || {};
+            } catch (e) {
+                cfg = {};
+            }
+
+            var columns       = cfg.columns || 3;
+            var columnsTablet = cfg.columnsTablet || 2;
+            var columnsMobile = cfg.columnsMobile || 1;
+            var gap           = (typeof cfg.gap === 'number') ? cfg.gap : 30;
+            var wrapper       = el.closest('.pcs-wrapper');
+
+            var options = {
+                slidesPerView: columnsMobile,
+                spaceBetween: gap,
+                loop: !!cfg.loop,
+                grabCursor: true,
+                watchOverflow: true,
+                breakpoints: {
+                    768: {
+                        slidesPerView: columnsTablet,
+                        spaceBetween: gap
+                    },
+                    1024: {
+                        slidesPerView: columns,
+                        spaceBetween: gap
+                    }
+                }
+            };
+
+            if (cfg.autoplay) {
+                options.autoplay = {
+                    delay: cfg.autoplayDelay || 4000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true
+                };
+            }
+
+            if (cfg.dots) {
+                options.pagination = {
+                    el: el.querySelector('.swiper-pagination'),
+                    clickable: true
+                };
+            }
+
+            if (cfg.arrows && wrapper) {
+                options.navigation = {
+                    nextEl: wrapper.querySelector('.pcs-next'),
+                    prevEl: wrapper.querySelector('.pcs-prev')
+                };
+            }
+
+            new Swiper(el, options);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initSliders);
+    } else {
+        initSliders();
+    }
+
+    // Avada lädt teils Inhalte dynamisch nach
+    window.addEventListener('load', initSliders);
+})();
